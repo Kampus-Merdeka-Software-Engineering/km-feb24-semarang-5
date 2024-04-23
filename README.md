@@ -9,19 +9,11 @@ KMFEB24
 | Role               | Members                    |
 |--------------------|----------------------------|
 | Front End Engineer | Nasywa Sakha Ningrum       |
-|                    |                            |
-|                    |                            |
-|                    |                            |
 | Deployment Team    |                            |
-|                    |                            |
-|                    |                            |
-|                    |                            |
 | Quality Assurance  | Widya Rachmania            |
 |                    | Muhammad Hafizh Adhyaksa   |
 |                    | Melani Putri Devita        |
 | Pitch Deck Team    | Anti Oktaviani             |
-|                    |                            |
-|                    |                            |
 
 ## Our Mentors
 @Akmal Abdillah as DA mentor 
