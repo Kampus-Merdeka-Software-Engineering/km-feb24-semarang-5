@@ -1,17 +1,28 @@
-## km-feb24-section-semarang-team-5
+## Bike Sales in USA and CANADA
 Intro to Data Analytics and Software Engineering 
 
-List of member team 5 :
-1. Widya Rachmania
-2. Gilang Ramadhan
-3. Melani Putri Devita
-4. Muhammad Hafizh Adhyaksa
-5. Rangga Bhagaskara
-6. Najmiaty Naim
-7. Maulana Muhammad Yahya
-8. Anti Oktaviani
-9. Raihan Baihaqi
-10. Syabila Andina Alifia
-11. Nasywa Sakha Ningrum
-12. Nur Aini Adelliyah
-13. Yoga Adi Susetyo
+## Project Overview
+[Data Analytics Deck : ](https://docs.google.com/presentation/d/1zFpTe5ydXszqb3BOb2hlWATnP4X5a_LO4zensBQhuuM/edit?usp=sharing)
+
+## Team 5 Semarang 🎺
+KMFEB24
+| Role               | Members                    |
+|--------------------|----------------------------|
+| Front End Engineer | Nasywa Sakha Ningrum       |
+|                    |                            |
+|                    |                            |
+|                    |                            |
+| Deployment Team    |                            |
+|                    |                            |
+|                    |                            |
+|                    |                            |
+| Quality Assurance  | Widya Rachmania            |
+|                    | Muhammad Hafizh Adhyaksa   |
+|                    | Melani Putri Devita        |
+| Pitch Deck Team    | Anti Oktaviani             |
+|                    |                            |
+|                    |                            |
+
+## Our Mentors
+@Akmal Abdillah as DA mentor 
+@Rafi Pratama as SE mentor
