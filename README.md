@@ -2,7 +2,7 @@
 Intro to Data Analytics and Software Engineering 
 
 ## Project Overview
-[Data Analytics Deck : ](https://docs.google.com/presentation/d/1zFpTe5ydXszqb3BOb2hlWATnP4X5a_LO4zensBQhuuM/edit?usp=sharing)
+[Data Analytics Deck's ](https://docs.google.com/presentation/d/1zFpTe5ydXszqb3BOb2hlWATnP4X5a_LO4zensBQhuuM/edit?usp=sharing)
 
 ## Team 5 Semarang 🎺
 KMFEB24
