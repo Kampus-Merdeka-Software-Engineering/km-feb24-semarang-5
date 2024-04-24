@@ -9,7 +9,8 @@ KMFEB24
 | Role               | Members                    |
 |--------------------|----------------------------|
 | Front End Engineer | Nasywa Sakha Ningrum       |
-| Deployment Team    |                            |
+|                    | Nur Aini Adelliyah         |
+| Deployment Team    | Raihan Baihaqi             |
 | Quality Assurance  | Widya Rachmania            |
 |                    | Muhammad Hafizh Adhyaksa   |
 |                    | Melani Putri Devita        |
@@ -17,4 +18,5 @@ KMFEB24
 
 ## Our Mentors
 @Akmal Abdillah as DA mentor 
+
 @Rafi Pratama as SE mentor
