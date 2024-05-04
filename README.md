@@ -15,6 +15,8 @@ KMFEB24
 |                    | Muhammad Hafizh Adhyaksa   |
 |                    | Melani Putri Devita        |
 | Pitch Deck Team    | Anti Oktaviani             |
+|                    | Maulana Yahya              |
+|                    | Gilang Ramadhan            |
 
 ## Our Mentors
 @Akmal Abdillah as DA mentor 
