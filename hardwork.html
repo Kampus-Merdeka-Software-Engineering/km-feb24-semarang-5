@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title> Team 5 DA </title>
+    </head>
+    <style>
+        .project-image {
+            width: 65%;
+            display: block; /* Ensure the image behaves as a block element */
+            margin: 0 auto; /* Center the image horizontally */
+        }
+
+        .image-container {
+            text-align: center; /* Center align the image container */
+        }
+       
+        /* Section styles */
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;            
+            border-bottom: 1px #777777 solid;
+        }
+    
+        /* Title styles */
+        .section-title {
+            font-size: 40px;
+            color: #000000;
+            margin: 0;
+            text-align: right; /* Align all titles to the right by default */
+            letter-spacing: -0.06em;
+        }
+
+        /* Adjust title alignment for even sections */
+        .section:nth-child(even) .section-title {
+            text-align: left;
+        }
+
+        /* Adjust title alignment for the first section */
+        .section:first-child .section-title {
+            text-align: left;
+        }
+    
+       
+        /* Description styles */
+        .section-description {
+            text-align: justify;
+        }
+    
+        /* Dataset link styles */
+        .dataset-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+    
+        /* Dataset link on hover */
+        .dataset-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">TEAM5</a>
+            <!--Theme Change Button-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                       <a href="hardwork.html" class="active-link nav__link">
+                            HARDWORK
+                       </a> 
+                    </li>
+                    <li class="nav__item">
+                        <a href="recommendation.html" class="nav__link">
+                           <u>RECOMMENDATION</u>                            
+                        </a> 
+                     </li>
+                     <li class="nav__item">
+                        <a href="index.html" class="nav__link ">
+                            <u>ABOUT</u>
+                        </a> 
+                     </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+
+                
+            </div>
+            <div class="nav__btns">
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+            
+        </nav>
+    </header>
+       
+        <main class="main">
+
+            <section class="capstone-section">
+                <div class="capstone-section__overlay"></div> 
+                <div class="capstone-section__content">
+                    <h2 class="capstone-section__title">CAPSTONE PROJECT: <br> BIKE SALES ANALYSIS IN USA & CANADA</h2>
+                </div>
+            </section> 
+
+            <section class="dataset section"> 
+                <h1 class="section-title">DATASET</h1>
+                <p class="section-description">The data used is not continuous with a total of 113,036 data.
+                    <br>Dataset condition still has duplicate data so it must be cleaned and reduce columns that are not used according to the project scope.</p>
+                <a class="dataset-link capstone-section__link" href="https://www.kaggle.com/datasets/sadiqshah/bike-sales-in-europe">bike.sales.europe</a>
+            </section>
+        
+            <section class="project-scope section"> 
+                <h1 class="section-title">Project Background</h1>
+                <div class="image-container">
+                    <img src="/assets/img/pb.png" alt="Project Background" class="project-image">
+                </div>
+                <p class="section-description" style="text-align: center;">The bikes category revenue has decreased from 2015 to 2016, hence the goal to increase the bikes sales trend by about 10% in the next 12 months.</p>
+            </section>    
+              
+        
+            <section class="root-cause-analysis section"> 
+                <h1 class="section-title">Root Cause Analysis</h1>
+                <div class="image-container">
+                    <img src="/assets/img/rca.png" alt="Project Background" class="project-image">
+                </div>
+            </section>   
+
+            <section class="project-goals section"> 
+                <h1 class="section-title">Project Goals</h1>
+                <p class="section-description" style="text-align: center; font-size: 20px;">Increase the trend of bicycle sales by about 10% within 12 to 18 months in 2016. By using sales trends in the bicycle category in Canada and the US in the first half of 2015 and 2016.
+                    </p>
+            </section>   
+
+
+        
+            <section class="results section"> 
+                <h1 class="section-title">Insight</h1>
+            </section>   
+            
+        </main>
+
+       
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-top-arrow-from-top scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    </body>
+    </html>
