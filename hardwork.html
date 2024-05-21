@@ -70,6 +70,58 @@
         .dataset-link:hover {
             text-decoration: underline;
         }
+
+        /* Capstone section styles */
+        .capstone-section {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .capstone-section img {
+            width: 100%;
+            height: auto;
+            opacity: 0.8; /* Slightly transparent */
+        }
+
+        .capstone-section__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+        }
+
+        .capstone-section__content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2; /* Ensure content is above overlay */
+        }
+
+        .capstone-section__title {
+            font-size: 36px;
+            color: white;
+        }
+
+        .scrollup {
+            display: none; /* Hidden by default */
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            z-index: 99;
+            cursor: pointer;
+        }
+
+        .scrollup__icon {
+            font-size: 24px;
+        }
     </style>
 </head>
 <body>
@@ -97,27 +149,21 @@
                      </li>
                 </ul>
                 <i class="uil uil-times nav__close" id="nav-close"></i>
-
-                
             </div>
             <div class="nav__btns">
-
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
             </div>
-            
         </nav>
     </header>
    
     <main class="main">
         <section class="capstone-section">
+            <img src="assets/img/bg.jpg" alt="Background Image">
             <div class="capstone-section__overlay"></div> 
             <div class="capstone-section__content">
                 <h2 class="capstone-section__title">CAPSTONE PROJECT: <br> BIKE SALES ANALYSIS IN USA & CANADA</h2>
-            </div>
-            <div class="image-container">
-                <img src="assets/img/bg.jpg" alt="CAPSTONE PROJECT" class="project-image">
             </div>
         </section> 
 
@@ -145,7 +191,6 @@
             </div>
         </section>
           
-
         <section class="project-goals section"> 
             <h1 class="section-title">Project Goals</h1>
             <div class="image-container">
@@ -159,7 +204,6 @@
         <section class="results section"> 
             <h1 class="section-title">Insight</h1>
         </section>   
-        
     </main>
 
     <!--==================== SCROLL TOP ====================-->
