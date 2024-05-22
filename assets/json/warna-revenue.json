@@ -1,0 +1,51 @@
+[{
+  "Country": "United States",
+  "color": "Red",
+  "total_order": "463",
+  "total_revenue": "1234764"
+}, {
+  "Country": "Canada",
+  "color": "Red",
+  "total_order": "79",
+  "total_revenue": "240154"
+}, {
+  "Country": "Canada",
+  "color": "Black",
+  "total_order": "173",
+  "total_revenue": "312829"
+}, {
+  "Country": "United States",
+  "color": "Black",
+  "total_order": "866",
+  "total_revenue": "1263911"
+}, {
+  "Country": "United States",
+  "color": "Yellow",
+  "total_order": "521",
+  "total_revenue": "767801"
+}, {
+  "Country": "Canada",
+  "color": "Yellow",
+  "total_order": "61",
+  "total_revenue": "108041"
+}, {
+  "Country": "United States",
+  "color": "Blue",
+  "total_order": "242",
+  "total_revenue": "349669"
+}, {
+  "Country": "Canada",
+  "color": "Blue",
+  "total_order": "56",
+  "total_revenue": "103893"
+}, {
+  "Country": "United States",
+  "color": "Silver",
+  "total_order": "619",
+  "total_revenue": "1101334"
+}, {
+  "Country": "Canada",
+  "color": "Silver",
+  "total_order": "86",
+  "total_revenue": "114044"
+}]

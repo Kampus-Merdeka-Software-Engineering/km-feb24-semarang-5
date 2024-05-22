@@ -1,0 +1,61 @@
+[{
+    "Sub_Category": "Mountain Bikes",
+    "Country": "United States",
+    "Customer_Gender": "M",
+    "total_order": "626"
+  }, {
+    "Sub_Category": "Road Bikes",
+    "Country": "United States",
+    "Customer_Gender": "M",
+    "total_order": "576"
+  }, {
+    "Sub_Category": "Mountain Bikes",
+    "Country": "United States",
+    "Customer_Gender": "F",
+    "total_order": "537"
+  }, {
+    "Sub_Category": "Road Bikes",
+    "Country": "United States",
+    "Customer_Gender": "F",
+    "total_order": "512"
+  }, {
+    "Sub_Category": "Touring Bikes",
+    "Country": "United States",
+    "Customer_Gender": "M",
+    "total_order": "259"
+  }, {
+    "Sub_Category": "Touring Bikes",
+    "Country": "United States",
+    "Customer_Gender": "F",
+    "total_order": "201"
+  }, {
+    "Sub_Category": "Mountain Bikes",
+    "Country": "Canada",
+    "Customer_Gender": "M",
+    "total_order": "103"
+  }, {
+    "Sub_Category": "Mountain Bikes",
+    "Country": "Canada",
+    "Customer_Gender": "F",
+    "total_order": "100"
+  }, {
+    "Sub_Category": "Road Bikes",
+    "Country": "Canada",
+    "Customer_Gender": "F",
+    "total_order": "90"
+  }, {
+    "Sub_Category": "Road Bikes",
+    "Country": "Canada",
+    "Customer_Gender": "M",
+    "total_order": "71"
+  }, {
+    "Sub_Category": "Touring Bikes",
+    "Country": "Canada",
+    "Customer_Gender": "F",
+    "total_order": "49"
+  }, {
+    "Sub_Category": "Touring Bikes",
+    "Country": "Canada",
+    "Customer_Gender": "M",
+    "total_order": "42"
+  }]

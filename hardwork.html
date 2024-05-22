@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!--==================== ANIMATION ====================-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+        <title> Team 5 DA </title>
+    </head>
+    <style>
+        .project-image {
+            width: 45%;
+            display: block; /* Ensure the image behaves as a block element */
+            margin: 0 auto; /* Center the image horizontally */
+        }
+
+        .image-container {
+            text-align: center; /* Center align the image container */
+        }
+        .image-container img { 
+        max-width: 75%; 
+        max-height: 75%; 
+        object-fit: contain; 
+        }
+        /* Section styles */
+        .section {
+            padding: 20px;                
+            margin-right: 25px;
+            margin-left: 25px;
+        }
+    
+        /* Title styles */
+        .section-title {
+            font-size: 28px;
+            color: #000000;
+            margin: 0;
+            text-align: right; /* Align all titles to the right by default */
+            letter-spacing: -0.06em;
+        }
+
+        /* Adjust title alignment for even sections */
+        .section:nth-child(even) .section-title {
+            text-align: left;
+        }
+
+        /* Adjust title alignment for the first section */
+        .section:first-child .section-title {
+            text-align: right;
+        }
+    
+       
+        /* Description styles */
+        .section-description {
+            text-align: justify;
+            color: #000000;
+        }
+    
+        /* Dataset link styles */
+        .dataset-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+    
+        /* Dataset link on hover */
+        .dataset-link:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container animate__animated animate__fadeInDown">
+                <a href="index.html" class="nav__logo">TEAM5</a>
+                <!--Theme Change Button-->
+                <div class="nav__menu " id="nav-menu">
+                    <ul class="nav__list grid animate__animated animate__backInRight">
+                    <li class="nav__item">
+                       <a href="hardwork.html" class="active-link nav__link">
+                            HARDWORK
+                       </a> 
+                    </li>
+                    <li class="nav__item">
+                        <a href="recommendation.html" class="nav__link">
+                           RECOMMENDATION                            
+                        </a> 
+                     </li>
+                     <li class="nav__item">
+                        <a href="index.html" class="nav__link ">
+                            ABOUT
+                        </a> 
+                     </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+
+                
+            </div>
+            <div class="nav__btns">
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+            
+        </nav>
+        </header>
+       
+        <main class="main">
+            <br>
+
+            <section class="capstone-section" >
+                <div class="capstone-section__overlay"></div> 
+                <div class="capstone-section__content">
+                    <h2 class="capstone-section__title">Team 5 Capstone Project <br> BIKE SALES ANALYSIS IN USA & CANADA</h2>
+                </div>
+                <br>
+                <hr>
+            </section>
+
+            <section class="project-scope section"> 
+                <h1 class="section-title" style="text-align: center;">Project Overview</h1>
+                
+                <div class="overview-chart-container" >
+                    <!-- <img src="/assets/img/pb.png" style="width: 80%;" alt="Project Background" class="project-image"> -->
+                    <canvas id="revenueChart" width="100%"></canvas>
+                </div>
+                
+            
+                <p class="section-description" style="text-align: center;">The bikes category revenue has decreased from 2015 to 2016, <br> hence the goal to increase the bikes sales trend by about 10% in the next 12 months.</p></td>
+               
+                <hr style="margin-top: 20px;">  
+            </section>    
+
+            <section class="dataset section"> 
+                <h1 class="section-title">Dataset</h1> 
+                <p class="section-description">The data used is not continuous with a total of 113,036 data.
+                <br>Dataset condition still has duplicate data so it must be cleaned and reduce columns that are not used according to the project scope.</p>
+                <a class="dataset-link capstone-section__link" href="https://www.kaggle.com/datasets/sadiqshah/bike-sales-in-europe">bike.sales.europe <i class="uil uil-external-link-alt"></i></a>
+                <br>
+                <hr style="margin-top: 20px;">
+            </section>           
+
+            <section class="root-cause-analysis section"> 
+                              
+                <div class="image-container">
+                    <h1 class="section-title" style="text-align: center;" >Root Cause Analysis</h1>  
+                    <img src="/assets/img/rca.png" alt="Project Background" class="project-image">
+                </div>
+                <br>
+                <hr>
+            </section>   
+
+            <section class="project-goals section">                 
+                <div class="image-container">
+                    <h1 class="section-title" style="text-align: left;">Project Goals</h1>
+                    <img src="/assets/img/prgoal.png" alt="Project Background" class="project-image">                    
+                </div>    
+                <br>
+                <hr>
+            </section>   
+
+            <section class="results section"> 
+                <h1 class="section-title" style="text-align: center;">Research Insight</h1>
+                <div class="bq-1 bq container grid">
+                    <div class="bq-title" onclick="toggleContent(this)">
+                        <span class="arrow down"><i class="uil uil-angle-double-down"></i></span>
+                        <h4 style="text-align: center; color: #000000;">
+                            Differences In Purchasing Patterns Of Bicycle Product Subcategories Between Weekdays And Weekends
+                        </h4>
+                        <span class="arrow down"><i class="uil uil-angle-double-down"></i></span>
+                        
+                    </div>
+                    
+                    <div class="bq-content">
+                        <p style="text-align: justify; text-align-last: center; color: #000000;margin-top: 20px;">
+                            Customers shop more often on weekdays than holidays. Weekdays have a 37.5% higher number of orders than weekends.
+                            The highest number of orders on weekdays is in the touring bike category. The highest percentage of orders on weekends is in the road bikes category.
+                        </p>
+                        <br>
+            
+                        <div style="text-align: center;" class="filter">
+                            <label for="selectCountry">Select Country :</label>
+                            <select id="selectCountry">
+                                <option value="All">All</option>
+                                <option value="United States">United States</option>
+                                <option value="Canada">Canada</option>
+                            </select>
+
+                            <label for="selectYear">Choose Year :</label>
+                            <select id="selectYear">
+                                <option value="All">All</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                            </select>
+                        </div>
+
+            
+                        <div class="scorecard">
+                            <div class="scorecard-item">
+                                <div class="scorecard-box">
+                                    <h4 id="chart-label-scorecard-weekend">Weekend Summary Sales</h4>
+                                    <h6 id="weekendAverage"></h6>
+                                </div>
+                                <div class="scorecard-box">
+                                    <h4 id="chart-label-scorecard-weekday">Weekday Summary Sales</h4>
+                                    <h6 id="weekdayAverage"></h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <table style="align-items:center; text-align: center;">
+                            <tr style="text-align: center;">
+                                <td colspan="2" style=" height: 250px; padding-left: 20px;">
+                                    <h4 style="text-align: center; justify-content: middle;" id="chart-label-bar">Average Sales</h4>
+                                    <canvas width="100%" id="salesChart"></canvas>
+                                </td>
+                                <!-- <td style="width: 50%; height: 350px; padding-right: 20px; text-align: center;">
+                                    <p>This is the differences between average orders at weekday and weekend sales</p>
+                                </td> -->
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="height: 100px; text-align: center;">
+                                    <p style="margin-top: 30px;">This is the differences between average orders at weekday and weekend sales</p>
+                                </td>
+                            
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td style="width: 50%; height: 350px;">
+                                    <div class="canvas-container">
+                                        <h4 style="text-align: center;" id="chart-label-pie-weekend">Weekend Sub Category</h4>
+                                        <canvas id="weekendPieChart"></canvas>
+                                    </div>                                
+                                </td>
+                                <td style="width: 50%; height: 350px; ">
+                                    <div class="canvas-container">
+                                        <h4 style="text-align: center;" id="chart-label-pie-weekday">Weekday Sub Category</h4>
+                                        <canvas id="weekdayPieChart"></canvas>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                        </table>                       
+                    </div>
+                </div>
+            
+                <div class="bq-2 bq container grid">
+                    <div class="bq-title" onclick="toggleContent(this)">
+                        <span class="arrow down"><i class="uil uil-angle-double-down"></i></span>
+                        <h4 style="text-align: center; color: #000000;">
+                            Differences in The Promotion or Marketing Of Bicycle Products
+                        </h4>
+                        <span class="arrow down"><i class="uil uil-angle-double-down"></i></span>
+                    </div>
+                    
+                    <div class="bq-content">
+                        <h4 class="chart-label">Differences Revenue by the first semester 2016 and 2015</h4>
+                        <div  class="overview-chart-container">
+                            
+                            <canvas style="width: 100%; height: 100%;" id="revenue-monthly-canvas"></canvas>
+                        </div>
+                        <table style="align-items: center; text-align: center; margin-top: 20px;">
+                            <td style="width: 50%; height: 350px; padding-right: 20px; border-right: 1px solid #777777;">
+                                <h4 class="chart-label">Differences Average Unit Price by Sub Category</h4>
+                                <h6 class="chart-label" style="color: #777777;font-weight: normal;">calculated with average unit price</h6>
+                                <canvas style="width: 100%; height: 100%;" id="price-chart-canvas"></canvas>
+                                <br>
+                            </td>
+                            <td style="width: 50%; height: 350px; padding-left: 20px;">
+                                <h4 class="chart-label">Differences Average Unit Cost by Sub Category</h4>
+                                <h6 class="chart-label" style="color: #777777;font-weight: normal;">calculated with average unit cost</h6>
+                                <canvas style="width: 100%; height: 100%;" id="cost-chart-canvas"></canvas>
+                                <br>
+                            </td>
+                        </table><br>
+                        <p style="text-align: justify;text-align-last: center; color: #000000; font-size: 13px;">
+                            Based on the first semester of 2015 and 2016,<br>Unit Price had reduction of approximately 5.81% and
+                            Unit Cost reduction of around 5.88%
+                        </p>
+            
+                        <br>
+            
+                        <h4 class="chart-label">Differences Revenue by Sub Category</h4>
+                        
+                        <table style="align-items: center;text-align: center;">
+                            <td style="width: 70%; height: 350px;">
+                                <canvas style="width: 100%; height: 100%;" id="revenue-chart-canvas"></canvas>
+                            </td>
+                            <td>
+                                <p style="text-align: left;text-align-last: left; color: #000000; font-size:13px; margin-top: 75%;">
+                                    In the first semester of 2016, revenue was increased by about 3 times.
+                                </p>
+                            </td>
+                        </table>
+            
+                        <br>
+            
+                        <div id="profit-chart" class="chart">
+                            <h4 class="chart-label">Differences Profit by Sub Category</h4>
+                            <canvas style="max-height: 300px;" id="profit-chart-canvas"></canvas>
+                            <br>
+                            <p style="text-align: justify;text-align-last: center; color: #000000; font-size: 14px;">
+                                Also, profit was increased by about 2 times.
+                            </p>
+                        </div>
+            
+                        <br>
+            
+                        <div class="vText" style="display: flex;">
+                            <div style="flex: 1; display: flex; justify-content: center; align-items: center; text-align: center; margin-right: 20px;">
+                                <p>In 2016, they added 25 new products and touring bikes category.</p>
+                            </div>
+                            <div id="product-chart" class="chart">
+                                <h4 class="chart-label">Total Product in Sub Category</h4>
+                                <canvas style="width: 450px;" id="product-chart-canvas"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bq-3 bq container grid">
+                    <div class="bq-title" onclick="toggleContent(this)">
+                        <span class="arrow down"><i class="uil uil-angle-double-down"></i></span>
+                        <div class="title-wrapper">
+                            
+                            <h4 id="chart-title" style="color: #000000;"><i class="uil uil-trophy"></i> Top Product <i class="uil uil-trophy"></i></h4>
+                            
+                        </div>
+                        <span class="arrow down"><i class="uil uil-angle-double-down"></i></span>
+                    </div>
+                    
+                    <div class="bq-content ">
+                        <div style="text-align: center; margin: 12px;">
+                            <label for="country-dropdown">Select Country:</label>
+                            <select id="country-dropdown">
+                                <option value="All Countries">All Countries</option>
+                            </select>
+            
+                            <label for="sort-dropdown">Sort by </label>
+                            <select id="sort-dropdown">
+                                <option value="Choose Sort">Choose Sort</option>
+                                <option value="asc">Ascending</option>
+                                <option value="desc">Descending</option>
+                            </select>
+                        </div>
+                        <br>
+
+                        <div class="vText" style="display: flex;">
+                            <div id="top-product-chart" class="chart">
+                                <canvas style="width: 450px;" id="top-product-chart-canvas"></canvas>
+                            </div>
+                            <div style="flex: 1; display: flex; justify-content: center; align-items: center; text-align: center; margin-right: 20px;">
+                                <p id="chartDataContainer" style="text-align:left ;color: #000000;"></p>
+                            </div>                            
+                        </div>        
+                    </div>
+                </div>
+
+                <div class="bq-4 bq container grid">
+                    <div class="bq-title" onclick="toggleContent(this)">
+                        <span class="arrow down"><i class="uil uil-angle-double-down"></i></span>
+                        <h4 id="chart-title" style="text-align: center; color: #000000;">The Customer Age Correlation</h4>
+                        <span class="arrow down"><i class="uil uil-angle-double-down"></i></span>
+                    </div>
+                    <div class="bq-content">  
+                        <div style="text-align: center; margin: 22px;">
+                            <label for="bq-4-dropdown">Select Country:</label>
+                            <select id="bq-4-dropdown">
+                                <option value="All">All</option>
+                                <option value="United States">US</option>
+                                <option value="Canada">Canada</option>
+                            </select>                            
+                        </div>
+                        
+                        <div id="age-revenue-chart" class="chart" style="margin-bottom: 35px;">
+                            <h4 id="chart-age-revenue" style="text-align: center; color: #000000;">Customers Age by Revenue</h4>
+                            <table style="align-items: center;text-align: center;">
+                                <td style="width: 50%; height: 350px;"><canvas style="width: 100%; height: 100%;" id="age-revenue-scatter-canvas"></canvas></td>
+                                <td style="width: 50%; height: 350px;"><canvas style="width: 100%; height: 100%;" id="age-revenue-bar-canvas"></canvas></td>
+                            </table>                      
+                            <p style="text-align: justify;text-align-last: center; color: #000000; font-size:13px;margin-top: 20px;">
+                                Income is influenced by the number of orders with an age range of 17 - 66 years.
+                                The most revenue is earned by customers aged 26 - 45 years old.
+                            </p>
+                        </div>   
+            
+                        <div id="age-order-scatter" class="chart">
+                            <h4 id="chart-age-order" style="text-align: center; color: #000000;">Customers Age by Order Quantity</h4>
+                            <table style="align-items: center;text-align: center;">
+                                <td style="width: 50%; height: 350px;"><canvas style="width: 100%; height: 100%;" id="age-order-scatter-canvas"></canvas></td>
+                                <td style="width: 50%; height: 350px;"><canvas style="width: 100%; height: 100%;" id="age-order-bar-canvas"></canvas></td>
+                            </table>               
+                            <p style="text-align: justify;text-align-last: center; color: #000000; font-size:13px; margin-top: 20px;">
+                                Mature buyers (26-45 years old) are the age group that buys most goods.
+                            </p>       
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                <div class="bq-5 bq container grid"> 
+                    <div class="bq-title" onclick="toggleContent(this)">
+                        <span class="arrow down"><i class="uil uil-angle-double-down"></i></span>
+                        <h4 id="chart-title" style="text-align: center; color: #000000;">The Customer Gender Preferences</h4>
+                        <span class="arrow down"><i class="uil uil-angle-double-down"></i></span>
+                    </div>
+                    <div class="bq-content slay">
+
+                        <div style="text-align: center; margin: 22px;">
+                            <label for="bq-5-dropdown">Select Country:</label>
+                            <select id="bq-5-dropdown">
+                                <option value="All">All</option>
+                                <option value="United States">US</option>
+                                <option value="Canada">Canada</option>
+                            </select>                            
+                        </div>
+
+                        <table class="table-gender" style="width: 100%; text-align: center; ">
+                            <tr>
+                                <td colspan="1" >
+                                    <div class="canvas-container1" style="width: 250px; height:350px ;border-right: 2px solid #cccc;">
+                                        <h4 id="chart-label-bq5-composition">Composition Gender</h4>
+                                        <canvas id="gender-pie-chart" height="300px"></canvas>
+                                        <p style="font-size: 13px;" class="canvas-des">From orders quantity, we found most buyers are male</p>
+                                    </div>
+                                </td>
+                                <td colspan="3" >
+                                    <div class="canvas-container1" style="width: 600px;height:350px ;margin-left: 25px;">
+                                        <h4 id="chart-label-bq5-size">Bike Size Preference Orders</h4>
+                                        <canvas id="gender-size" width="500px" height="240px"></canvas>
+                                        <p style="font-size: 13px;"  class="canvas-des">on SIZE, men choose sizes 46, 42 and 38. While women, 42, 38 and 46.</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div class="canvas-container1" style="width: 400px;"><br>
+                                        <h4 id="chart-label-bq5-category">Bike Category Preference Orders</h4>
+                                        <canvas id="gender-category" height="280px"></canvas>
+                                    </div>
+                                </td>
+                                <td colspan="2">
+                                    <div class="canvas-container1" style="width: 400px;"><br>
+                                        <h4 id="chart-label-bq5-color">Bike Color Preference Orders</h4>
+                                        <canvas id="gender-warna" height="280px"></canvas>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" style="vertical-align: middle; text-align: center;">
+                                    <p style="font-size: 13px;"  class="canvas-des">
+                                        On SUB CATEGORY and COLOUR, <br>
+                                        women and men are the same in terms of choosing the type of bicycle.<br>
+                                        It's just that there are more customers in men
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" style="vertical-align: middle; text-align: center;">
+                                    <div class="canvas-container1" style="width:95%"><br>
+                                        <h4 id="chart-label-bq5-type">Bike Type Preference Orders</h4>
+                                        <canvas height="350px" width="800px" id="gender-type"></canvas>
+                                        <p style="font-size: 13px;" class="canvas-des">on TYPE, men and women on average prefer Mountain 200, Road-150, and Touring-1000.</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        
+                    </div>
+        
+                </div>
+
+                <div class="bq-6 bq container grid">
+
+                    <div class="bq-title" onclick="toggleContent(this)">
+                        <span class="arrow down"><i class="uil uil-angle-double-down"></i></span>
+                        <h4 id="chart-title" style="text-align: center; color: #000000;">Revenue Preference by Product </h4>
+                        <span class="arrow down"><i class="uil uil-angle-double-down"></i></span>
+                    </div>
+                    
+                    <div class="bq-content " style="text-align: center;">
+                        
+                        <div style="text-align: center; margin: 22px;">
+                            <label for="bq-6-dropdown">Select Country:</label>
+                            <select id="bq-6-dropdown">
+                                <option value="All">All</option>
+                                <option value="United States">US</option>
+                                <option value="Canada">Canada</option>
+                            </select>
+                        </div>
+                        
+
+
+                        <div id="product-Subcategory-chart" class="chart">
+                            <h4 id="chart-label-bq6-size">Bike Size Preference Revenue and Orders</h4>
+                            <canvas id="product-size-canvas"></canvas>
+                            <p style="font-size: 13px;margin-bottom: 20px;" class="canvas-des"> by Preferences sales on size of bikes, they mostly to buy on size 42-46-38</p>
+                        </div>
+
+                        <div id="product-Subcategory-chart" class="chart">
+                            <h4 id="chart-label-bq6-category">Bikes Category Preference Revenue and Orders</h4>
+                            <canvas id="product-sub-canvas"></canvas>
+                            <p style="font-size: 13px;margin-bottom: 20px;" class="canvas-des"> by Preferences sales on category of bikes, they mostly to buy on Mountain Bikes</p>
+                            
+                        </div>
+                        <div id="product-warna-chart" class="chart">
+                            <h4 id="chart-label-bq6-color">Bike Color Preference Revenue and Orders</h4>
+                            <canvas id="product-warna-canvas"></canvas>
+                            <p style="font-size: 13px;margin-bottom: 20px;" class="canvas-des"> by Preferences sales on color of bikes, they likely to buy on Black and Red</p>
+                        </div>
+                        <div id="product-type-chart" class="chart">
+                            <h4 id="chart-label-bq6-type">Bike Type Preference Revenue and Orders</h4>
+                            <canvas id="product-type-canvas"></canvas>
+                            <p style="font-size: 13px;margin-bottom: 20px;" class="canvas-des"> by Preferences sales on type of bikes, they interested to buy on Mountain-200 or Road-150</p>
+                        </div>  
+                    </div>                    
+                </div>
+              
+            </section>           
+            <footer>
+                <p>Kampus Merdeka X Revou Tech Academy Batch FEB24 ©Team 5 Semarang</p>
+            </footer>
+        </main>
+
+       
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-top-arrow-from-top scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/bq2.js"></script>
+        <script src="assets/js/bq3.js"></script>
+        <script src="assets/js/bq4.js"></script>
+
+
+        <!-- Chart.js Library -->
+        <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>        
+
+        
+
+        <!-- ChartDataLabels Plugin -->
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+
+
+    </body>
+</html>

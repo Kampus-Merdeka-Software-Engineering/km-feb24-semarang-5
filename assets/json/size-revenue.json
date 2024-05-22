@@ -1,0 +1,131 @@
+[{
+  "Country": "United States",
+  "size": "44",
+  "total_order": "305",
+  "total_revenue": "361397"
+}, {
+  "Country": "United States",
+  "size": "48",
+  "total_order": "271",
+  "total_revenue": "398304"
+}, {
+  "Country": "Canada",
+  "size": "48",
+  "total_order": "52",
+  "total_revenue": "116084"
+}, {
+  "Country": "Canada",
+  "size": "52",
+  "total_order": "29",
+  "total_revenue": "63773"
+}, {
+  "Country": "United States",
+  "size": "52",
+  "total_order": "176",
+  "total_revenue": "422797"
+}, {
+  "Country": "United States",
+  "size": "56",
+  "total_order": "62",
+  "total_revenue": "204366"
+}, {
+  "Country": "Canada",
+  "size": "56",
+  "total_order": "2",
+  "total_revenue": "7084"
+}, {
+  "Country": "Canada",
+  "size": "62",
+  "total_order": "26",
+  "total_revenue": "83673"
+}, {
+  "Country": "United States",
+  "size": "62",
+  "total_order": "158",
+  "total_revenue": "309758"
+}, {
+  "Country": "United States",
+  "size": "58",
+  "total_order": "72",
+  "total_revenue": "93786"
+}, {
+  "Country": "Canada",
+  "size": "58",
+  "total_order": "25",
+  "total_revenue": "49763"
+}, {
+  "Country": "Canada",
+  "size": "44",
+  "total_order": "42",
+  "total_revenue": "48032"
+}, {
+  "Country": "United States",
+  "size": "60",
+  "total_order": "124",
+  "total_revenue": "203924"
+}, {
+  "Country": "Canada",
+  "size": "60",
+  "total_order": "27",
+  "total_revenue": "52625"
+}, {
+  "Country": "United States",
+  "size": "40",
+  "total_order": "132",
+  "total_revenue": "105245"
+}, {
+  "Country": "United States",
+  "size": "42",
+  "total_order": "452",
+  "total_revenue": "816457"
+}, {
+  "Country": "Canada",
+  "size": "42",
+  "total_order": "65",
+  "total_revenue": "115819"
+}, {
+  "Country": "United States",
+  "size": "38",
+  "total_order": "341",
+  "total_revenue": "638862"
+}, {
+  "Country": "Canada",
+  "size": "38",
+  "total_order": "57",
+  "total_revenue": "125569"
+}, {
+  "Country": "Canada",
+  "size": "40",
+  "total_order": "34",
+  "total_revenue": "23432"
+}, {
+  "Country": "United States",
+  "size": "46",
+  "total_order": "386",
+  "total_revenue": "757917"
+}, {
+  "Country": "Canada",
+  "size": "46",
+  "total_order": "65",
+  "total_revenue": "130139"
+}, {
+  "Country": "United States",
+  "size": "50",
+  "total_order": "140",
+  "total_revenue": "223767"
+}, {
+  "Country": "Canada",
+  "size": "50",
+  "total_order": "14",
+  "total_revenue": "24473"
+}, {
+  "Country": "United States",
+  "size": "54",
+  "total_order": "92",
+  "total_revenue": "180899"
+}, {
+  "Country": "Canada",
+  "size": "54",
+  "total_order": "17",
+  "total_revenue": "38495"
+}]

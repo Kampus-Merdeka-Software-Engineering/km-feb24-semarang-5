@@ -1,0 +1,31 @@
+[{
+  "Country": "United States",
+  "Sub_Category": "Road Bikes",
+  "total_order": "1088",
+  "total_revenue": "1882156"
+}, {
+  "Country": "Canada",
+  "Sub_Category": "Road Bikes",
+  "total_order": "161",
+  "total_revenue": "368184"
+}, {
+  "Country": "United States",
+  "Sub_Category": "Touring Bikes",
+  "total_order": "460",
+  "total_revenue": "749415"
+}, {
+  "Country": "Canada",
+  "Sub_Category": "Touring Bikes",
+  "total_order": "91",
+  "total_revenue": "176742"
+}, {
+  "Country": "United States",
+  "Sub_Category": "Mountain Bikes",
+  "total_order": "1163",
+  "total_revenue": "2085908"
+}, {
+  "Country": "Canada",
+  "Sub_Category": "Mountain Bikes",
+  "total_order": "203",
+  "total_revenue": "334035"
+}]

@@ -1,0 +1,131 @@
+[{
+  "Country": "United States",
+  "type": "Road-150",
+  "total_order": "336",
+  "total_revenue": "1086532"
+}, {
+  "Country": "Canada",
+  "type": "Road-150",
+  "total_order": "51",
+  "total_revenue": "180647"
+}, {
+  "Country": "United States",
+  "type": "Road-250",
+  "total_order": "105",
+  "total_revenue": "230569"
+}, {
+  "Country": "Canada",
+  "type": "Road-250",
+  "total_order": "56",
+  "total_revenue": "135451"
+}, {
+  "Country": "United States",
+  "type": "Road-650",
+  "total_order": "131",
+  "total_revenue": "92489"
+}, {
+  "Country": "Canada",
+  "type": "Road-650",
+  "total_order": "8",
+  "total_revenue": "6200"
+}, {
+  "Country": "United States",
+  "type": "Road-750",
+  "total_order": "213",
+  "total_revenue": "104511"
+}, {
+  "Country": "Canada",
+  "type": "Road-750",
+  "total_order": "20",
+  "total_revenue": "10694"
+}, {
+  "Country": "United States",
+  "type": "Road-350-W",
+  "total_order": "118",
+  "total_revenue": "176845"
+}, {
+  "Country": "Canada",
+  "type": "Road-350-W",
+  "total_order": "11",
+  "total_revenue": "18558"
+}, {
+  "Country": "United States",
+  "type": "Road-550-W",
+  "total_order": "185",
+  "total_revenue": "191210"
+}, {
+  "Country": "Canada",
+  "type": "Road-550-W",
+  "total_order": "15",
+  "total_revenue": "16634"
+}, {
+  "Country": "United States",
+  "type": "Touring-1000",
+  "total_order": "260",
+  "total_revenue": "570822"
+}, {
+  "Country": "Canada",
+  "type": "Touring-1000",
+  "total_order": "65",
+  "total_revenue": "153424"
+}, {
+  "Country": "United States",
+  "type": "Touring-2000",
+  "total_order": "96",
+  "total_revenue": "108970"
+}, {
+  "Country": "Canada",
+  "type": "Touring-2000",
+  "total_order": "9",
+  "total_revenue": "10827"
+}, {
+  "Country": "United States",
+  "type": "Touring-3000",
+  "total_order": "104",
+  "total_revenue": "69623"
+}, {
+  "Country": "Canada",
+  "type": "Touring-3000",
+  "total_order": "17",
+  "total_revenue": "12491"
+}, {
+  "Country": "United States",
+  "type": "Mountain-100",
+  "total_order": "41",
+  "total_revenue": "120621"
+}, {
+  "Country": "Canada",
+  "type": "Mountain-100",
+  "total_order": "1",
+  "total_revenue": "3341"
+}, {
+  "Country": "United States",
+  "type": "Mountain-200",
+  "total_order": "866",
+  "total_revenue": "1811877"
+}, {
+  "Country": "Canada",
+  "type": "Mountain-200",
+  "total_order": "123",
+  "total_revenue": "280305"
+}, {
+  "Country": "United States",
+  "type": "Mountain-500",
+  "total_order": "147",
+  "total_revenue": "74704"
+}, {
+  "Country": "Canada",
+  "type": "Mountain-500",
+  "total_order": "45",
+  "total_revenue": "24509"
+}, {
+  "Country": "United States",
+  "type": "Mountain-400-W",
+  "total_order": "109",
+  "total_revenue": "78706"
+}, {
+  "Country": "Canada",
+  "type": "Mountain-400-W",
+  "total_order": "34",
+  "total_revenue": "25880"
+}]

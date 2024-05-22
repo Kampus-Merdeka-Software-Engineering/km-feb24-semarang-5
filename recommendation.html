@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!--==================== ANIMATION ====================-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+        <title> Team 5 DA </title>
+    </head>
+    <style>
+        
+        .image-section {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .image-section img {
+            max-width: 60%;
+            height: auto;
+        }
+        
+
+        .speech-bubble {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #f1c40f;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            color: #000000;
+        }
+
+        .platforms {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            color: #000000;
+        }
+
+        .platform {
+            margin: 0 20px;
+            text-align: center;
+        }
+
+        .platform img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .platform p {
+            font-size: 14px;
+        }
+        
+        .project-image {
+            width: 55%;
+            display: block; /* Ensure the image behaves as a block element */
+            margin: 0 auto; /* Center the image horizontally */
+        }
+
+        .image-container {
+            text-align: center; /* Center align the image container */
+        }
+       
+        /* Section styles */
+        .section {
+            margin-bottom: 5px;
+            /* border-bottom: 1px #777777 solid; */
+            margin-right: 20px;
+            margin-left: 20px;
+        }    
+    
+        /* Title styles */
+        .section-title {
+            font-size: 28px;
+            color: #000000;
+            margin: 0;
+            text-align: center; /* Align all titles to the right by default */
+            letter-spacing: -0.06em;
+        }
+
+        /* Description styles */
+        .section-description {
+            text-align: justify;
+            font-size: 12px;
+        }
+        
+        .container.form {
+            width: 550px;
+            padding: 20px;
+            background-color: #FEFAE5;
+            border-radius: 40px;
+            box-shadow: inset 0 3px 15px #F2E8B6;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label{
+            text-align: left;
+        }
+
+        label {
+            color: black;
+            text-align: left;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            width: 100%; 
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            resize: none; 
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #FF9500;
+            color: black;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s, font-weight 0.3s;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        button:hover {
+            background-color: #6E47C1;
+            color: black;
+            font-weight: bold;
+            transform: scale(1.1); 
+        }
+        table {
+            width: 100%; 
+            height: 350px;
+            table-layout: fixed;
+            border-collapse: collapse; /* Tambahkan ini jika Anda ingin menghilangkan jarak antara sel */
+        }
+        td {
+            vertical-align: top;
+            padding: 10px; /* Tambahkan padding jika diperlukan */
+        }
+        td label{
+            text-align: left;
+        }
+
+    </style>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container animate__animated animate__fadeInDown">
+                <a href="index.html" class="nav__logo">TEAM5</a>
+                <!--Theme Change Button-->
+                <div class="nav__menu " id="nav-menu">
+                <ul class="nav__list grid animate__animated animate__backInRight">
+                    <li class="nav__item">
+                       <a href="hardwork.html" class=" nav__link">
+                        HARDWORK  
+                       </a> 
+                    </li>
+                    <li class="nav__item">
+                        <a href="recommendation.html" class=" active-link nav__link">
+                           RECOMMENDATION                          
+                        </a> 
+                     </li>
+                     <li class="nav__item">
+                        <a href="index.html" class="nav__link ">
+                            ABOUT
+                        </a> 
+                     </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+
+                
+            </div>
+            <div class="nav__btns">
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+            
+        </nav>
+    </header>
+       
+        <main class="main"><br><br>
+            <section class="Conclusion section"> 
+                <div class="parent-container">
+                    <div class="recommendation-title2">
+                      <img src="/assets/img/lamp.png" style="width:45px; margin-left: 15%;">
+                      <h3 style="text-align: center; color: #000000;">CONCLUSION<br>Bike Sales Analysis</h3>
+                      <img src="/assets/img/lamp.png" style="width:45px; margin-right: 15%;">                    
+                    </div>
+                  </div>
+                  
+                <table style="height: auto;">
+                    <td style="width: 55%;height: auto; ">
+                        <div class="recommendation-title" onclick="toggleRec(this)">
+                            <span class="arrow down"><i class="uil uil-angle-double-down"></i></span>
+                            <h3 style="text-align: justify; color: #000000;">Based on the first half of 2015 with 2016</h3>
+                            <span class="arrow down"><i class="uil uil-angle-double-down"></i></span>
+                        </div>
+                        <div class="recommendation-content show">
+                            <br>
+                            <ol class="list">
+                                <li><span>The difference in the number of bicycle products between the first semester of 2016 and 2015 increased revenue in the first semester of 2016.</span></li>
+                                <li><span>Revenue in 2016 will increase due to the upward trend of sales movement every month in the first half of 2016.</span></li>
+                                <li><span>Increased profitability in Mountain Bikes category.</span></li>
+                                <li><span>Selling Price and Production Cost in 2016 decreased by 4%, gaining buyer preference for the product, increasing marketability in the country and region.</span></li>
+                                <li><span>Sales results show that the most significant customer demographics are those between 26 to 45 years old.</span></li>
+                                <li><span>Sales of specific bike types, colours, and sizes can contribute significantly to total revenue.</span></li>
+                            </ol>
+                        </div>
+                    </td>
+                    <td style="width: 45%; padding-left: 20px;height: auto; ">
+                        <div class="recommendation-title" onclick="toggleRec(this)">
+                            <span class="arrow down"><i class="uil uil-angle-double-down"></i></span>
+                            <h3 style="text-align: justify; color: #000000;">Conclusion Bike Sales Analysis</h3>
+                            <span class="arrow down"><i class="uil uil-angle-double-down"></i></span>
+                        </div>
+                        <div class="recommendation-content show">
+                            <div class="image-container">
+                                <img src="/assets/img/Conclusion .png">
+                            </div>
+                        </div>
+                    </td>
+                </table>   
+                <hr style="margin-left: 20px;margin-right: 20px;">          
+            </section>
+            
+        
+            <section class="Recommendation "> 
+                <h1 class="section-title">Recommendations</h1>
+                <div class="image-container">
+                    <img src="/assets/img/stars.png" style="width:20%; text-align: center;"> 
+                </div>
+                <div class="reco-man">
+                    <ol class="section-description " style="text-align: justify; color: #000000; padding-left: 25%; padding-top: 5%;padding-bottom:8%;">
+                        <li>Organise Weekend Sale or Happy Hour promotions to increase sales on weekends.</li>
+                        <li>Partner with contract companies and give special discounts to employees to retain customers.</li>
+                        <li>Conduct regular market research to keep up with consumer trends and preferences, and develop or improve products as needed.</li>
+                        <li>Increase advertising on social media to reach more potential customers.</li>
+                        <li>Conduct canvassing and distribute vouchers at shopping centres or specific events to attract consumers directly.</li>
+                        <li>Segment customers by age and gender for more effective marketing.</li>
+                        <li>Pay attention to using product customisation features to tailor sales to customer demographics.</li>
+                        <li>Focus promotions on featured products with high order numbers and huge profits.</li>
+                        <li>Improve the overall customer experience with responsive and personalised service.</li>
+                    </ol>
+                </div>
+                <hr style="margin-left: 40px;margin-right: 40px;"> 
+                        
+                <table >
+                    <td style="width:50%; text-align: left;" >                        
+                        <div class="container form">
+                            <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSch707FJRKL6b1zxy3xgawnqA2Kfq5ClEsfexVPPl4OCm5hog/viewform?embedded=true" width="500" height="500" frameborder="0" marginheight="0" marginwidth="0">
+                            Loading…
+                            </iframe> -->
+                            <h2 style="color: #000000; text-align: center;margin-top: 10px;">Recommendation Box</h2><br>
+                            <form  method="post" id="recommendation-form">
+                                <div class="form-group">
+                                    <label style="font-weight: normal; font-size: 16px;text-align: left;" for="name">Nama:
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label style="font-weight: normal; font-size: 16px;"  for="email">Email:</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label style="font-weight: normal; font-size: 16px;" for="message">Pesan:</label><BR>
+                                    <textarea id="message" name="message" required></textarea>
+                                </div>
+                                <div class="form-group center">
+                                    <button type="submit" onclick="submitForm()">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </td>
+                    <td style="width:50%">
+                        <div class="recommendation-section">
+                            <!-- <h1>User Recommendation</h1> -->
+                            <div class="image-section">
+                                <img src="/assets/img/man-q.png" alt="User Illustration">
+                                <div class="speech-bubble">Kirim Pesanmu melalui platform di bawah!</div>
+                            </div>
+                            <div class="platforms">
+                                <div class="platform">
+                                    <a href="https://wa.me/123456789" target="_blank">
+                                        <img src="/assets/img/whatsapp.png" alt="WhatsApp">
+                                        <p>WhatsApp</p>
+                                    </a>
+                                </div>
+                                <div class="platform">
+                                    <a href="mailto:team5.tasmgrevou@gmail.com" target="_blank">
+                                        <img src="/assets/img/gmail.png" alt="Gmail">
+                                        <p>team5.tasmgrevou@gmail.com</p>
+                                    </a>
+                                </div>
+                                <div class="platform">
+                                    <a href="https://www.instagram.com/revou_id/" target="_blank">
+                                        <img src="/assets/img/instagram.png" alt="DM Instagram">
+                                        <p>DM Instagram</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </table>
+                
+            </section>
+            
+        </main>
+        <footer>
+            <p>Kampus Merdeka X Revou Tech Academy Batch FEB24 ©Team 5 Semarang</p>
+        </footer>
+
+       
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-top-arrow-from-top scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    </body>
+    </html>
