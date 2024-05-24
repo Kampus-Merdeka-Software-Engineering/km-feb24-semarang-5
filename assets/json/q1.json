@@ -1,0 +1,81 @@
+[{
+  "Sales_Year": "2015",
+  "Country": "United States",
+  "Sub_Category": "Mountain Bikes",
+  "Weekend_Average": "0.44",
+  "Weekday_Average": "0.98",
+  "Weekend_Percentage": "30.99",
+  "Weekday_Percentage": "69.01"
+}, {
+  "Sales_Year": "2015",
+  "Country": "Canada",
+  "Sub_Category": "Mountain Bikes",
+  "Weekend_Average": "0.39",
+  "Weekday_Average": "0.9",
+  "Weekend_Percentage": "30.23",
+  "Weekday_Percentage": "69.77"
+}, {
+  "Sales_Year": "2015",
+  "Country": "United States",
+  "Sub_Category": "Road Bikes",
+  "Weekend_Average": "0.47",
+  "Weekday_Average": "1.04",
+  "Weekend_Percentage": "31.13",
+  "Weekday_Percentage": "68.87"
+}, {
+  "Sales_Year": "2015",
+  "Country": "Canada",
+  "Sub_Category": "Road Bikes",
+  "Weekend_Average": "0.69",
+  "Weekday_Average": "1.04",
+  "Weekend_Percentage": "39.88",
+  "Weekday_Percentage": "60.12"
+}, {
+  "Sales_Year": "2016",
+  "Country": "United States",
+  "Sub_Category": "Mountain Bikes",
+  "Weekend_Average": "0.44",
+  "Weekday_Average": "1.03",
+  "Weekend_Percentage": "29.93",
+  "Weekday_Percentage": "70.07"
+}, {
+  "Sales_Year": "2016",
+  "Country": "Canada",
+  "Sub_Category": "Mountain Bikes",
+  "Weekend_Average": "0.43",
+  "Weekday_Average": "1.09",
+  "Weekend_Percentage": "28.29",
+  "Weekday_Percentage": "71.71"
+}, {
+  "Sales_Year": "2016",
+  "Country": "United States",
+  "Sub_Category": "Road Bikes",
+  "Weekend_Average": "0.37",
+  "Weekday_Average": "1.09",
+  "Weekend_Percentage": "25.34",
+  "Weekday_Percentage": "74.66"
+}, {
+  "Sales_Year": "2016",
+  "Country": "Canada",
+  "Sub_Category": "Road Bikes",
+  "Weekend_Average": "0.43",
+  "Weekday_Average": "1.01",
+  "Weekend_Percentage": "29.86",
+  "Weekday_Percentage": "70.14"
+}, {
+  "Sales_Year": "2016",
+  "Country": "United States",
+  "Sub_Category": "Touring Bikes",
+  "Weekend_Average": "0.47",
+  "Weekday_Average": "1.05",
+  "Weekend_Percentage": "30.92",
+  "Weekday_Percentage": "69.08"
+}, {
+  "Sales_Year": "2016",
+  "Country": "Canada",
+  "Sub_Category": "Touring Bikes",
+  "Weekend_Average": "0.36",
+  "Weekday_Average": "1.1",
+  "Weekend_Percentage": "24.66",
+  "Weekday_Percentage": "75.34"
+}]

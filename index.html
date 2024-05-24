@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!--==================== ANIMATION ====================-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        <title> Team 5 DA </title>
+    </head>
+    <style>
+        .typewriter h2 {
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid orange; /* The typewriter cursor */
+            white-space: nowrap; /* Keeps the content on a single line */
+            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .10em; /* Adjust as needed */
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+            position: relative;
+            display: inline-block;
+        }
+
+
+        /* The typing effect */
+        @keyframes typing {
+            0% { width: 0 }
+            100% { width: 100% }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: purple; }
+        }
+
+        /* Add dots at the end */
+        .typewriter h2::after {
+            content: '...'; /* The dots at the end */
+            position: absolute;
+            color: black;
+            right: -1em; /* Adjust position if necessary */
+            opacity: 0; /* Initially hidden */
+            animation: show-dots 1s steps(1, end) 3.5s infinite; /* Show dots after typing */
+        }
+
+        @keyframes show-dots {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+
+    </style>
+
+    <body>
+        
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+        <nav class="nav container animate__animated animate__fadeInDown">
+            <a href="index.html" class="nav__logo">TEAM5</a>
+            <!--Theme Change Button-->
+                <div class="nav__menu " id="nav-menu">
+                <ul class="nav__list grid animate__animated animate__backInRight">
+                    <li class="nav__item">
+                       <a href="hardwork.html" class="nav__link">
+                            HARDWORK
+                       </a> 
+                    </li>
+                    <li class="nav__item">
+                        <a href="recommendation.html" class="nav__link">
+                            RECOMMENDATION                           
+                        </a> 
+                     </li>
+                     <li class="nav__item">
+                        <a href="index.html" class="nav__link active-link">
+                            ABOUT
+                        </a> 
+                     </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+
+                
+            </div>
+            <div class="nav__btns">
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>            
+        </nav>
+    </header>
+       
+        <main class="main">
+            <!--==================== ABOUT ====================-->
+            <table class="table-team" style="margin-top: 10%;">
+                <td style="width:25%; ">
+                    <div class="typewriter"></div>
+                        <h2 class="section__title ">Our Team 5</h2>        
+                        <span  class="section__subtitle">Meet Our Team Members</span> 
+                    </div>              
+                </td>
+                <td style="width: 75%;">
+                    <section class="team-profile section " id="team">       
+                        <br><br>
+                        <div class="team-profile__container container grid animate__animated animate__slideInUp">
+                            <!-- Member 1 -->
+                            <div class="team-profile__member">
+                                <img src="assets/img/member1.png" alt="Widya Rachmania" class="team-profile__img">
+                                <div class="team-profile__data">
+                                    <h3 class="team-profile__name">Widya Rachmania</h3>
+                                    <p class="team-profile__university">from Universitas Gunadarma</p>
+                                    <p class="team-profile__role">as Project Leader, Data Analyst & QA</p>
+                                    <a href="https://www.linkedin.com/in/widyarachmania/" target="_blank" class="home__social-icon linkedin">
+                                        <i class="uil uil-linkedin-alt build__icon"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/wdyarc/" target="_blank" class="home__social-icon instagram">
+                                        <i class="uil uil-instagram build__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+        
+                            <!-- Member 2 -->
+                            <div class="team-profile__member">
+                                <img src="assets/img/member2.png" alt="Gilang Ramadhan" class="team-profile__img">
+                                <div class="team-profile__data">
+                                    <h3 class="team-profile__name">Gilang Ramadhan</h3>
+                                    <p class="team-profile__university">from Universitas Lampung</p>
+                                    <p class="team-profile__role">as  Data Visualizasion and Pitch Deck Team</p>
+                                    <a href="https://www.linkedin.com/in/gilang-ramadhan-64a8261b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="home__social-icon linkedin">
+                                        <i class="uil uil-linkedin-alt build__icon"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/xcv.gill/" target="_blank" class="home__social-icon instagram">
+                                        <i class="uil uil-instagram build__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+        
+                            <!-- Member 3 -->
+                            <div class="team-profile__member">
+                                <img src="assets/img/member3.png" alt="Melani Putri Devita" class="team-profile__img">
+                                <div class="team-profile__data">
+                                    <h3 class="team-profile__name">Melani Putri Devita</h3>
+                                    <p class="team-profile__university">from University Name</p>
+                                    <p class="team-profile__role">as Role</p>
+                                    <!-- Tambahkan tautan media sosial jika ada -->
+                                </div>
+                            </div>
+        
+                            <!-- Member 4 -->
+                            <div class="team-profile__member">
+                                <img src="assets/img/member4.png" alt="Muhammad Hafizh Adhyaksa" class="team-profile__img">
+                                <div class="team-profile__data">
+                                    <h3 class="team-profile__name">Muhammad Hafizh Adhyaksa</h3>
+                                    <p class="team-profile__university">from University Name</p>
+                                    <p class="team-profile__role">as Role</p>
+                                    <!-- Tambahkan tautan media sosial jika ada -->
+                                </div>
+                            </div>
+        
+                            <!-- Member 5 -->
+                            <div class="team-profile__member">
+                                <img src="assets/img/member5.png" alt="Rangga Bhagaskara" class="team-profile__img">
+                                <div class="team-profile__data">
+                                    <h3 class="team-profile__name">Rangga Bhagaskara</h3>
+                                    <p class="team-profile__university">from University Name</p>
+                                    <p class="team-profile__role">as Role</p>
+                                    <!-- Tambahkan tautan media sosial jika ada -->
+                                </div>
+                            </div>
+        
+                            <!-- Member 6 -->
+        
+        
+                            <!-- Member 7 -->
+                            <div class="team-profile__member">
+                                <img src="assets/img/member7.png" alt="Maulana Muhammad Yahya" class="team-profile__img">
+                                <div class="team-profile__data">
+                                    <h3 class="team-profile__name">Maulana Muhammad Yahya</h3>
+                                    <p class="team-profile__university">from University Name</p>
+                                    <p class="team-profile__role">as Role</p>
+                                    <!-- Tambahkan tautan media sosial jika ada -->
+                                </div>
+                            </div>
+        
+                            <!-- Member 8 -->
+                            <div class="team-profile__member">
+                                <img src="assets/img/member8.png" alt="Anti Oktaviani" class="team-profile__img">
+                                <div class="team-profile__data">
+                                    <h3 class="team-profile__name">Anti Oktaviani</h3>
+                                    <p class="team-profile__university">from Universitas Pendidikan Indonesia</p>
+                                    <p class="team-profile__role">as Data Analyst & Pitch Deck</p>
+                                    <a href="https://www.linkedin.com/in/anti-oktaviani-8b45b52b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="home__social-icon linkedin">
+                                        <i class="uil uil-linkedin-alt build__icon"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/vianioktaanti" target="_blank" class="home__social-icon instagram">
+                                        <i class="uil uil-instagram build__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+        
+                            <!-- Member 9 -->
+                            <div class="team-profile__member">
+                                <img src="assets/img/member9.png" alt="Raihan Baihaqi" class="team-profile__img">
+                                <div class="team-profile__data">
+                                    <h3 class="team-profile__name">Raihan Baihaqi</h3>
+                                    <p class="team-profile__university">from Universitas Negeri Yogyakarta</p>
+                                    <p class="team-profile__role">as Data Cleaning & Deployment Team</p>
+                                    <a href="http://www.linkedin.com/in/raihan-baihaqi-70094a2b0" target="_blank" class="home__social-icon linkedin">
+                                        <i class="uil uil-linkedin-alt build__icon"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/raihanbaihaqi_27" target="_blank" class="home__social-icon instagram">
+                                        <i class="uil uil-instagram build__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+        
+                            <!-- Member 10 -->
+        
+        
+                            <!-- Member 11 -->
+                            <div class="team-profile__member">
+                                <img src="assets/img/member11.png" alt="Nasywa Sakha Ningrum" class="team-profile__img">
+                                <div class="team-profile__data">
+                                    <h3 class="team-profile__name">Nasywa Sakha Ningrum</h3>
+                                    <p class="team-profile__university">from Universitas Pamulang</p>
+                                    <p class="team-profile__role">as Data Cleaning & Front End</p>
+                                    <a href="https://www.instagram.com/nasywa3032" target="_blank" class="home__social-icon instagram">
+                                        <i class="uil uil-instagram build__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+        
+                            <!-- Member 12 -->
+                            <div class="team-profile__member">
+                                <img src="assets/img/member12.png" alt="Nur Aini Adelliyah" class="team-profile__img">
+                                <div class="team-profile__data">
+                                    <h3 class="team-profile__name">Nur Aini Adelliyah</h3>
+                                    <p class="team-profile__university">from Universitas Qomaruddin </p>
+                                    <p class="team-profile__role">as Front End</p>
+                                    <a href="https://www.linkedin.com/me?trk=p_mwlite_feed_updates-secondary_nav" target="_blank" class="home__social-icon linkedin">
+                                        <i class="uil uil-linkedin-alt build__icon"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/@adelliyah2312" target="_blank" class="home__social-icon instagram">
+                                        <i class="uil uil-instagram build__icon"></i>
+                                    </a>
+                                    <!-- Tambahkan tautan media sosial jika ada -->
+                                </div>
+                            </div>
+        
+                            <!-- Member 13 -->
+                            <div class="team-profile__member">
+                                <img src="assets/img/member13.png" alt="Yoga Adi Susetyo" class="team-profile__img">
+                                <div class="team-profile__data">
+                                    <h3 class="team-profile__name">Yoga Adi Susetyo</h3>
+                                    <p class="team-profile__university">from University Name</p>
+                                    <p class="team-profile__role">as Role</p>
+                                    <!-- Tambahkan tautan media sosial jika ada -->
+                                </div>
+                            </div>                        
+                        </div>
+                    </section>
+                    
+                </td>
+            </table>
+                <!-- <h2 style="margin-top: 8%;" class="section__title">Our Team 5</h2>        
+                <span  class="section__subtitle">Meet Our Team Members</span> -->
+            
+
+            <section class="mentor-profile section" id="mentor">
+                
+                    <h2 class="section__title">Our Mentors</h2>
+                    <span class="section__subtitle">Meet Our Mentors</span>
+                    
+            
+                <div class="mentor-profile__container container grid">
+                    <!-- Mentor 1 -->
+                    <div class="mentor-profile__member">
+                        <img src="assets/img/mentor1.png" alt="Mentor 1" class="mentor-profile__img">
+                        <div class="mentor-profile__data">
+                            <h4 class="mentor-profile__name">Akmal Abdillah</h4>
+                            <p class="mentor-profile__company">from Universitas Islam Indonesia</p>
+                            <p class="mentor-profile__position">Data Analyst Mentor</p>
+                            <a href="https://id.linkedin.com/in/akmal-abdillah-7aa103134" target="_blank" class="home__social-icon linkedin">
+                                <i class="uil uil-linkedin-alt build__icon"></i>
+                            </a>
+                            <a href="https://www.instagram.com/abdillahakmal" target="_blank" class="home__social-icon instagram">
+                                <i class="uil uil-instagram build__icon"></i>
+                            </a>
+
+                            <!-- Tambahkan informasi tambahan jika diperlukan -->
+                        </div>
+                    </div>
+            
+                    <!-- Mentor 2 -->
+                    <div class="mentor-profile__member">
+                        <img src="assets/img/mentor2.png" alt="Mentor 2" class="mentor-profile__img">
+                        <div class="mentor-profile__data">
+                            <h4 class="mentor-profile__name">Rafi Pratama</h4>
+                            <p class="mentor-profile__position">Software Engineering Mentor</p>
+
+                            <!-- Tambahkan informasi tambahan jika diperlukan -->
+                        </div>
+                    </div>            
+                </div>
+            </section>           
+
+            <section class="capstone-section">
+                <div class="capstone-section__overlay"></div> 
+                <div class="capstone-section__content">
+                    <h2 class="capstone-section__title">Team 5 Capstone Project <br> BIKE SALES ANALYSIS IN USA & CANADA</h2>
+                    <a href="hardwork.html" class="capstone-section__link ">Full Read</a>
+                </div>
+            </section>            
+        </main>
+        
+        <footer>
+            <p>Kampus Merdeka X Revou Tech Academy Batch FEB24 ©Team 5 Semarang</p>
+        </footer>
+
+       
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-top-arrow-from-top scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    </body>
+    </html>

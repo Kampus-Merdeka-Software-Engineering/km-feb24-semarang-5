@@ -1,0 +1,43 @@
+[{
+  "Year": "2015",
+  "Sub_Category": "Road Bikes",
+  "Avg_Cost": "1273",
+  "Avg_Price": "2064",
+  "Total_Revenue": "764133",
+  "Total_Product": "34"
+}, {
+  "Year": "2016",
+  "Sub_Category": "Road Bikes",
+  "Avg_Cost": "1203",
+  "Avg_Price": "1944",
+  "Total_Revenue": "1486207",
+  "Total_Product": "35"
+}, {
+  "Year": "2016",
+  "Sub_Category": "Touring Bikes",
+  "Avg_Cost": "1139",
+  "Avg_Price": "1833",
+  "Total_Revenue": "926157",
+  "Total_Product": "21"
+}, {
+  "Year": "2015",
+  "Sub_Category": "Touring Bikes",
+  "Avg_Cost": "0",
+  "Avg_Price": "0",
+  "Total_Revenue": "0",
+  "Total_Product": "0"
+},{
+  "Year": "2015",
+  "Sub_Category": "Mountain Bikes",
+  "Avg_Cost": "1105",
+  "Avg_Price": "2025",
+  "Total_Revenue": "567784",
+  "Total_Product": "21"
+}, {
+  "Year": "2016",
+  "Sub_Category": "Mountain Bikes",
+  "Avg_Cost": "1040",
+  "Avg_Price": "1903",
+  "Total_Revenue": "1852159",
+  "Total_Product": "24"
+}]

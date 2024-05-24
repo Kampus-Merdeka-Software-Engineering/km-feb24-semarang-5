@@ -1,0 +1,256 @@
+[{
+    "Country": "United States",
+    "Customer_Gender": "M",
+    "total_order": "454",
+    "type": "Mountain-200"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "F",
+    "total_order": "412",
+    "type": "Mountain-200"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "M",
+    "total_order": "199",
+    "type": "Road-150"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "F",
+    "total_order": "137",
+    "type": "Road-150"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "M",
+    "total_order": "132",
+    "type": "Touring-1000"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "M",
+    "total_order": "130",
+    "type": "Road-750"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "F",
+    "total_order": "128",
+    "type": "Touring-1000"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "F",
+    "total_order": "96",
+    "type": "Road-550"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "M",
+    "total_order": "89",
+    "type": "Road-550"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "F",
+    "total_order": "86",
+    "type": "Mountain-500"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "M",
+    "total_order": "85",
+    "type": "Mountain-400"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "F",
+    "total_order": "83",
+    "type": "Road-750"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "F",
+    "total_order": "78",
+    "type": "Road-650"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "F",
+    "total_order": "72",
+    "type": "Road-250"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "M",
+    "total_order": "72",
+    "type": "Road-350"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "M",
+    "total_order": "68",
+    "type": "Touring-2000"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "F",
+    "total_order": "62",
+    "type": "Mountain-200"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "M",
+    "total_order": "61",
+    "type": "Mountain-200"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "M",
+    "total_order": "61",
+    "type": "Mountain-500"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "M",
+    "total_order": "59",
+    "type": "Touring-3000"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "M",
+    "total_order": "53",
+    "type": "Road-650"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "F",
+    "total_order": "50",
+    "type": "Road-250"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "F",
+    "total_order": "46",
+    "type": "Road-350"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "F",
+    "total_order": "45",
+    "type": "Touring-3000"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "M",
+    "total_order": "39",
+    "type": "Road-150"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "F",
+    "total_order": "34",
+    "type": "Touring-1000"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "M",
+    "total_order": "33",
+    "type": "Road-250"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "M",
+    "total_order": "31",
+    "type": "Touring-1000"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "F",
+    "total_order": "28",
+    "type": "Touring-2000"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "M",
+    "total_order": "26",
+    "type": "Mountain-100"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "F",
+    "total_order": "26",
+    "type": "Mountain-500"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "F",
+    "total_order": "24",
+    "type": "Mountain-400"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "M",
+    "total_order": "23",
+    "type": "Mountain-400"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "M",
+    "total_order": "19",
+    "type": "Mountain-500"
+  }, {
+    "Country": "United States",
+    "Customer_Gender": "F",
+    "total_order": "15",
+    "type": "Mountain-100"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "M",
+    "total_order": "13",
+    "type": "Road-750"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "F",
+    "total_order": "12",
+    "type": "Road-150"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "F",
+    "total_order": "12",
+    "type": "Road-550"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "F",
+    "total_order": "11",
+    "type": "Mountain-400"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "M",
+    "total_order": "9",
+    "type": "Touring-3000"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "F",
+    "total_order": "8",
+    "type": "Touring-3000"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "F",
+    "total_order": "7",
+    "type": "Road-750"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "F",
+    "total_order": "7",
+    "type": "Touring-2000"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "M",
+    "total_order": "6",
+    "type": "Road-250"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "M",
+    "total_order": "6",
+    "type": "Road-350"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "F",
+    "total_order": "5",
+    "type": "Road-350"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "M",
+    "total_order": "4",
+    "type": "Road-650"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "F",
+    "total_order": "4",
+    "type": "Road-650"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "M",
+    "total_order": "3",
+    "type": "Road-550"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "M",
+    "total_order": "2",
+    "type": "Touring-2000"
+  }, {
+    "Country": "Canada",
+    "Customer_Gender": "F",
+    "total_order": "1",
+    "type": "Mountain-100"
+  }]
