@@ -10,6 +10,7 @@ KMFEB24
 |--------------------|----------------------------|
 | Front End Engineer | Nasywa Sakha Ningrum       |
 |                    | Nur Aini Adelliyah         |
+|                    | Rangga Bhagaskara          |
 | Deployment Team    | Raihan Baihaqi             |
 | Quality Assurance  | Widya Rachmania            |
 |                    | Muhammad Hafizh Adhyaksa   |
