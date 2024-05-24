@@ -52,8 +52,8 @@ window.onload = function () {
         },
         plugins: {
             datalabels: {
-                align: 'end', // Align labels to the end of the data point
-                anchor: 'end', // Anchor labels to the end of the data point
+                align: 'end',
+                anchor: 'end', 
                 clip: false, // Ensure labels are not clipped
                 formatter: function(value) {
                     return value.toLocaleString(); // Format number with commas

@@ -346,12 +346,6 @@ h4, p{
   font-weight: normal;
 }
 
-/* .pie-container {
-
-  display: flex;
-  justify-content:space-between;
-  
-} */
 
 .canvas-container {
   border: 1px solid #ccc;
@@ -362,7 +356,6 @@ h4, p{
   text-align: center;
   vertical-align: middle; 
 }
-
 
 canvas {
   color: #000000;
@@ -546,6 +539,34 @@ canvas {
 }
 
 /*==================== RECOMMENDATION ====================*/
+
+.image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.platforms {
+  display: flex;
+  justify-content: center;
+}
+
+.platform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.recommendation-section {
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  
+}
+
 
 .reco-man{
   background-image: url('/assets/img/man-hand.png');
