@@ -192,6 +192,11 @@ function submitForm() {
       return;
   }
   
+  if (name.length <= 5) {
+      alert("Name must be more than 5 characters");
+      return;
+  }
+
   if (email === '') {
       alert("Email cannot be empty");
       return;
@@ -216,10 +221,10 @@ function submitForm() {
   document.getElementById('recommendation-form').reset();
 }
 
-
 window.onload = function() {
   displayData();
 }
+
 
 
 function saveData(name, email, message) {
