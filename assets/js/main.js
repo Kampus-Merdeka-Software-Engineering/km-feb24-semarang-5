@@ -182,13 +182,28 @@ function toggleContent(element) {
 /*==================== form dom ====================*/
 
 function submitForm() {
-  var name = document.getElementById('name').value;
-  var email = document.getElementById('email').value;
-  var message = document.getElementById('message').value;
+  var name = document.getElementById('name').value.trim();
+  var email = document.getElementById('email').value.trim();
+  var message = document.getElementById('message').value.trim();
   var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+  if (name === '') {
+      alert("Name cannot be empty");
+      return;
+  }
+  
+  if (email === '') {
+      alert("Email cannot be empty");
+      return;
+  }
+  
+  if (message === '') {
+      alert("Message cannot be empty");
+      return;
+  }
+
   if (!emailPattern.test(email)) {
-      alert("Email should be contain '@' and domain alike '.com'");
+      alert("Email should contain '@' and a domain like '.com'");
       return;
   }
 
@@ -200,6 +215,7 @@ function submitForm() {
 
   document.getElementById('recommendation-form').reset();
 }
+
 
 window.onload = function() {
   displayData();
