@@ -155,8 +155,29 @@ footer{
   padding: 20px;
   font-weight: bold;
   width: 100%; 
+  position: fixed;
+  bottom: 0;
+}
+/* ADMISSION FORM */
+.message-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px;
+  margin-left: 40px;
+  margin-bottom: 100px;
 
 }
+
+.message-grid .form {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 /* .section {
@@ -214,7 +235,6 @@ margin: auto;
   background-color: #FBF9F1;  
   border-radius: 9px;
   padding: 15px;
-  margin-top: 10px;
 }
 
 
@@ -264,9 +284,9 @@ margin: auto;
   
 }
 
-.bq{
+/* .bq{
   margin-top: 20px;
-}
+} */
 
 .header {
   width: 100%;

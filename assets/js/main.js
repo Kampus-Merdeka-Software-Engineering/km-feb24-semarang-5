@@ -179,7 +179,142 @@ function toggleContent(element) {
   }
 }
 
-/*==================== TESTIMONIAL ====================*/
+/*==================== form dom ====================*/
+
+function submitForm() {
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var message = document.getElementById('message').value;
+  var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailPattern.test(email)) {
+      alert("Email should be contain '@' and domain alike '.com'");
+      return;
+  }
+
+  var messages = JSON.parse(localStorage.getItem('messages')) || [];
+  messages.push({ name: name, email: email, message: message });
+  localStorage.setItem('messages', JSON.stringify(messages));
+
+  alert("Message has been sent!");
+
+  document.getElementById('recommendation-form').reset();
+}
+
+window.onload = function() {
+  displayData();
+}
+
+
+function saveData(name, email, message) {
+  // Mengambil data lama dari local storage
+  var messages = JSON.parse(localStorage.getItem('messages')) || [];
+
+  // Menambahkan data baru
+  messages.push({ name: name, email: email, message: message });
+
+  // Menyimpan kembali ke local storage
+  localStorage.setItem('messages', JSON.stringify(messages));
+}
+
+function displayData() {
+  // Mengambil nilai dari local storage
+  var messages = JSON.parse(localStorage.getItem('messages')) || [];
+
+  // Mengambil elemen message-section
+  var messageSection = document.getElementById('message-section');
+
+  // Mengosongkan konten message-section
+  messageSection.innerHTML = '';
+
+  // Menambahkan setiap pesan sebagai div baru
+  messages.forEach(function(data, index) {
+      var messageDiv = document.createElement('div');
+      messageDiv.className = 'form';
+
+      var nameLabel = document.createElement('label');
+      nameLabel.innerText = "Nama:";
+      var nameInput = document.createElement('input');
+      nameInput.type = 'text';
+      nameInput.value = data.name;
+      nameInput.readOnly = true;
+
+      var emailLabel = document.createElement('label');
+      emailLabel.innerText = "Email:";
+      var emailInput = document.createElement('input');
+      emailInput.type = 'email';
+      emailInput.value = data.email;
+      emailInput.readOnly = true;
+
+      var messageLabel = document.createElement('label');
+      messageLabel.innerText = "Pesan:";
+      var messageTextarea = document.createElement('textarea');
+      messageTextarea.value = data.message;
+      messageTextarea.readOnly = true;
+
+      // Tombol Edit
+      var editButton = document.createElement('button');
+      var editIcon = document.createElement('i');
+      editIcon.className = 'uil uil-edit-alt';
+      editButton.appendChild(editIcon);
+      editButton.appendChild(document.createTextNode(' Edit'));
+      editButton.onclick = function() {
+          editMessage(index);
+      };
+
+      // Tombol Hapus
+      var deleteButton = document.createElement('button');
+      var deleteIcon = document.createElement('i');
+      deleteIcon.className = 'uil uil-trash-alt';
+      deleteButton.appendChild(deleteIcon);
+      deleteButton.appendChild(document.createTextNode(' Delete'));
+      deleteButton.onclick = function() {
+          deleteMessage(index);
+      };
+
+      messageDiv.appendChild(nameLabel);
+      messageDiv.appendChild(nameInput);
+      messageDiv.appendChild(emailLabel);
+      messageDiv.appendChild(emailInput);
+      messageDiv.appendChild(messageLabel);
+      messageDiv.appendChild(messageTextarea);
+      messageDiv.appendChild(editButton);
+      messageDiv.appendChild(deleteButton);
+
+      messageSection.appendChild(messageDiv);
+  });
+}
+
+function deleteMessage(index) {
+  if (confirm("Are you sure want to delete this?")) {
+      var messages = JSON.parse(localStorage.getItem('messages')) || [];
+      messages.splice(index, 1);
+      localStorage.setItem('messages', JSON.stringify(messages));
+      displayData();
+  }
+}
+
+function editMessage(index) {
+  var messages = JSON.parse(localStorage.getItem('messages')) || [];
+  var message = messages[index];
+
+  var newName = prompt("Edit Name:", message.name);
+  var newEmail = prompt("Edit E-Mail:", message.email);
+  var newMessage = prompt("Edit Message:", message.message);
+
+  if (newName !== null && newEmail !== null && newMessage !== null) {
+      messages[index] = { name: newName, email: newEmail, message: newMessage };
+      localStorage.setItem('messages', JSON.stringify(messages));
+      displayData();
+  }
+}
+
+// Memastikan data ditampilkan saat halaman dimuat
+window.onload = function() {
+  displayData();
+}
+
+
 /*==================== TESTIMONIAL ====================*/
 fetch('/assets/json/q1.json')
   .then(response => response.json())

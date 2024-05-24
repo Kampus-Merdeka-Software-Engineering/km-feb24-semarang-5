@@ -143,6 +143,13 @@
             box-sizing: border-box;
             resize: none; 
         }
+        input:invalid {
+            border-color: 2px solid red;
+        }
+
+        input:valid {
+            border-color: 2px solid green;
+        }
 
         .center {
             display: flex;
@@ -184,6 +191,28 @@
             text-align: left;
         }
 
+        .notification {
+            margin-top: 10px;
+            color: green;
+            display: none;
+        }
+        section.message {
+            margin-top: 20px;
+        }
+
+        section.message .form {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            margin-bottom: 10px;
+        }
+
+        .notification {
+            margin-top: 10px;
+            color: green;
+            display: none;
+        }
     </style>
     <body>
         <!--==================== HEADER ====================-->
@@ -289,35 +318,35 @@
                 </div>
                 <hr style="margin-left: 40px;margin-right: 40px;"> 
                         
-                <table >
+                <table style="margin-bottom: 50px;" >
                     <td style="width:50%; text-align: left;" >                        
                         <div class="container form">
                             <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSch707FJRKL6b1zxy3xgawnqA2Kfq5ClEsfexVPPl4OCm5hog/viewform?embedded=true" width="500" height="500" frameborder="0" marginheight="0" marginwidth="0">
                             Loading…
                             </iframe> -->
                             <h2 style="color: #000000; text-align: center;margin-top: 10px;">Recommendation Box</h2><br>
-                            <form  method="post" id="recommendation-form">
+                            <form method="post" id="recommendation-form" >
                                 <div class="form-group">
-                                    <label style="font-weight: normal; font-size: 16px;text-align: left;" for="name">Nama:
+                                    <label style="font-weight: normal; font-size: 16px;text-align: left;" for="name">Nama:</label>
                                     <input type="text" id="name" name="name" required>
                                 </div>
                                 <div class="form-group">
-                                    <label style="font-weight: normal; font-size: 16px;"  for="email">Email:</label>
-                                    <input type="email" id="email" name="email" required>
+                                    <label style="font-weight: normal; font-size: 16px;" for="email">Email:</label>
+                                    <input type="email" id="email" name="email" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" title="Email harus mengandung '@' dan domain seperti '.com'">
                                 </div>
                                 <div class="form-group">
-                                    <label style="font-weight: normal; font-size: 16px;" for="message">Pesan:</label><BR>
+                                    <label style="font-weight: normal; font-size: 16px;" for="message">Pesan:</label><br>
                                     <textarea id="message" name="message" required></textarea>
                                 </div>
                                 <div class="form-group center">
-                                    <button type="submit" onclick="submitForm()">Submit</button>
+                                    <button type="button" onclick="submitForm()">Submit</button>
                                 </div>
                             </form>
                         </div>
                     </td>
-                    <td style="width:50%">
+                    <!-- <td style="width:50%">
                         <div class="recommendation-section">
-                            <!-- <h1>User Recommendation</h1> -->
+                            <h1>User Recommendation</h1>
                             <div class="image-section">
                                 <img src="/assets/img/man-q.png" alt="User Illustration">
                                 <div class="speech-bubble">Kirim Pesanmu melalui platform di bawah!</div>
@@ -343,7 +372,7 @@
                                 </div>
                             </div>
                         </div>
-                    </td>
+                    </td> -->
                 </table>
                 
             </section>
