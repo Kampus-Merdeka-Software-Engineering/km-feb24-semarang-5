@@ -155,7 +155,6 @@ footer{
   padding: 20px;
   font-weight: bold;
   width: 100%; 
-  position: fixed;
   bottom: 0;
 }
 /* ADMISSION FORM */
@@ -761,6 +760,7 @@ h2 .capstone-section{
 input,
 textarea{
   background-color: #F5F88C;
+  font-family: 'Poppins';
 }
 
 /*==================== NAV ====================*/
@@ -1028,8 +1028,7 @@ textarea{
   }
 
   .header,
-  .main,
-  .footer__container{
+  .main{
     padding: 0 1rem;
   }
 
