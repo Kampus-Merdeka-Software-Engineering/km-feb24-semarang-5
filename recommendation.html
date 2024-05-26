@@ -326,15 +326,15 @@
                             <form method="post" id="recommendation-form" >
                                 <div class="form-group">
                                     <label style="font-weight: normal; font-size: 16px;text-align: left;" for="name">Nama:</label>
-                                    <input type="text" id="name" name="name" required>
+                                    <input type="text" id="name" name="name" required placeholder="Your Name">
                                 </div>
                                 <div class="form-group">
                                     <label style="font-weight: normal; font-size: 16px;" for="email">Email:</label>
-                                    <input type="email" id="email" name="email" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" title="Email harus mengandung '@' dan domain seperti '.com'">
+                                    <input type="email" id="email" name="email" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" title="E-Mail should be contain '@' and domain alike '.com'" placeholder="Your E-Mail Address">
                                 </div>
                                 <div class="form-group">
                                     <label style="font-weight: normal; font-size: 16px;" for="message">Pesan:</label><br>
-                                    <textarea id="message" name="message" required></textarea>
+                                    <textarea id="message" name="message" required placeholder="Your Comments or Feedback Details"></textarea>
                                 </div>
                                 <div class="form-group center">
                                     <button type="button" onclick="submitForm()">Submit</button>
