@@ -1028,8 +1028,7 @@ textarea{
   }
 
   .header,
-  .main,
-  .footer__container{
+  .main{
     padding: 0 1rem;
   }
 
