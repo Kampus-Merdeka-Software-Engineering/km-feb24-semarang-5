@@ -761,7 +761,7 @@ h2 .capstone-section{
 input,
 textarea{
   background-color: #F5F88C;
-  font-style :  var(--body-font);
+  font-family: 'Poppins';
 }
 
 /*==================== NAV ====================*/
