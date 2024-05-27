@@ -155,6 +155,7 @@ footer{
   padding: 20px;
   font-weight: bold;
   width: 100%; 
+  position: fixed;
   bottom: 0;
 }
 /* ADMISSION FORM */
@@ -760,7 +761,6 @@ h2 .capstone-section{
 input,
 textarea{
   background-color: #F5F88C;
-  font-family: 'Poppins';
 }
 
 /*==================== NAV ====================*/
@@ -813,7 +813,8 @@ textarea{
     top:0px;
     position: fixed;
     width:100%;
-
+    height: 7.5%;
+    
   }
   main{
     margin-top:12%;
@@ -980,11 +981,43 @@ textarea{
 
   .nav__list{
     column-gap: 0;
+    font-size: 15px;
   }
 
   .home__content{
     grid-template-columns: .25fr 3fr;
   }
+
+  .table-team td{
+    display: contents;
+    background-color: white;
+  }
+
+  section #team{
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+  .typewriter {
+    margin: 12%;
+  }
+  .mentor-profile__container {
+    display: contents
+  }
+
+  footer{
+    height: fit-content;
+  }
+  .capstone-section__title {
+    font-size: large;
+    font-weight: bold;
+  }
+  .capstone-section__content {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+  }
+  
+
 
 }
 
@@ -1022,15 +1055,21 @@ textarea{
   }
 
   .header{
-    top:0;
-    height: 60px;
+    top: 0;
+    height: 50px;
     bottom: initial;
+    font-size: 20px;    
   }
-
+  .capstone-section {
+    margin-bottom: 80px;
+    height: 350px;
+  }
+/* 
   .header,
-  .main{
+  .main,
+  .footer__container{
     padding: 0 1rem;
-  }
+  } */
 
   .nav{
     height:calc(var(--header-height)+ 1.5rem);
