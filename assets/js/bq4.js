@@ -569,6 +569,7 @@ document.addEventListener('DOMContentLoaded', () => {
         typeRevenue();
         subRevenue();
         warnaRevenue();
+        RevenueYearsBar();
     });
 
     // Initial call to render the chart with default data
@@ -576,11 +577,12 @@ document.addEventListener('DOMContentLoaded', () => {
     typeRevenue();
     subRevenue();
     warnaRevenue();
+    RevenueYearsBar();
 });
 
 let sizeRevenueChart;
 let typeRevenueChart;
 let subRevenueChart;
 let warnaRevenueChart;
-
+let revenueChart;
 
