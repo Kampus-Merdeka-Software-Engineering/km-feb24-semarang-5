@@ -142,9 +142,7 @@ const RevenueYearsBar = async () => {
   });
 };
 
-
-RevenueYearsBar();
-
+//panggil revenue bar di BQ4.js
 
 
 // tooggle DROP Down1
