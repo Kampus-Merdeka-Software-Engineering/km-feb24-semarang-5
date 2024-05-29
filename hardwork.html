@@ -83,11 +83,11 @@
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
-            <nav class="nav container animate__animated animate__fadeInDown">
+            <nav class="nav container animate__animated animate__bounceInDown">
                 <a href="index.html" class="nav__logo">TEAM5</a>
                 <!--Theme Change Button-->
                 <div class="nav__menu " id="nav-menu">
-                    <ul class="nav__list grid animate__animated animate__backInRight">
+                    <ul class="nav__list grid">
                     <li class="nav__item">
                        <a href="hardwork.html" class="active-link nav__link">
                             HARDWORK
@@ -225,11 +225,8 @@
                             <tr style="text-align: center;">
                                 <td colspan="2" style=" height: 250px; padding-left: 20px;">
                                     <h4 style="text-align: center; justify-content: middle;" id="chart-label-bar">Average Sales</h4>
-                                    <canvas width="100%" id="salesChart"></canvas>
+                                    <canvas style="max-height: 250px; width: 80%" id="salesChart"></canvas>
                                 </td>
-                                <!-- <td style="width: 50%; height: 350px; padding-right: 20px; text-align: center;">
-                                    <p>This is the differences between average orders at weekday and weekend sales</p>
-                                </td> -->
                             </tr>
                             <tr>
                                 <td colspan="2" style="height: 100px; text-align: center;">
@@ -238,13 +235,13 @@
                             
                             </tr>
                             <tr style="text-align: center;">
-                                <td style="width: 50%; height: 350px;">
+                                <td style="width: 50%; height: 220px;">
                                     <div class="canvas-container">
                                         <h4 style="text-align: center;" id="chart-label-pie-weekend">Weekend Sub Category</h4>
                                         <canvas id="weekendPieChart"></canvas>
                                     </div>                                
                                 </td>
-                                <td style="width: 50%; height: 350px; ">
+                                <td style="width: 50%; height: 220px; ">
                                     <div class="canvas-container">
                                         <h4 style="text-align: center;" id="chart-label-pie-weekday">Weekday Sub Category</h4>
                                         <canvas id="weekdayPieChart"></canvas>
@@ -267,18 +264,17 @@
                     
                     <div class="bq-content">
                         <h4 class="chart-label">Differences Revenue by the first semester 2016 and 2015</h4>
-                        <div  class="overview-chart-container">
-                            
+                        <div  class="overview-chart-container" style="height:250px">                            
                             <canvas style="width: 100%; height: 100%;" id="revenue-monthly-canvas"></canvas>
                         </div>
                         <table style="align-items: center; text-align: center; margin-top: 20px;">
-                            <td style="width: 50%; height: 350px; padding-right: 20px; border-right: 1px solid #777777;">
+                            <td style="width: 50%; height: 320px; padding-right: 20px; border-right: 1px solid #777777;">
                                 <h4 class="chart-label">Differences Average Unit Price by Sub Category</h4>
                                 <h6 class="chart-label" style="color: #777777;font-weight: normal;">calculated with average unit price</h6>
                                 <canvas style="width: 100%; height: 100%;" id="price-chart-canvas"></canvas>
                                 <br>
                             </td>
-                            <td style="width: 50%; height: 350px; padding-left: 20px;">
+                            <td style="width: 50%; height: 320px; padding-left: 20px;">
                                 <h4 class="chart-label">Differences Average Unit Cost by Sub Category</h4>
                                 <h6 class="chart-label" style="color: #777777;font-weight: normal;">calculated with average unit cost</h6>
                                 <canvas style="width: 100%; height: 100%;" id="cost-chart-canvas"></canvas>
@@ -295,11 +291,11 @@
                         <h4 class="chart-label">Differences Revenue by Sub Category</h4>
                         
                         <table style="align-items: center;text-align: center;">
-                            <td style="width: 70%; height: 350px;">
+                            <td style="width: 70%; height: 320px;">
                                 <canvas style="width: 100%; height: 100%;" id="revenue-chart-canvas"></canvas>
                             </td>
-                            <td>
-                                <p style="text-align: left;text-align-last: left; color: #000000; font-size:13px; margin-top: 75%;">
+                           <td style="width: 30%; height: 320px;">
+                                <p style="text-align: left;text-align-last: left; color: #000000; font-size:13px; margin-top: 45%;">
                                     In the first semester of 2016, revenue was increased by about 3 times.
                                 </p>
                             </td>
@@ -324,7 +320,7 @@
                             </div>
                             <div id="product-chart" class="chart">
                                 <h4 class="chart-label">Total Product in Sub Category</h4>
-                                <canvas style="width: 450px;" id="product-chart-canvas"></canvas>
+                                <canvas style="width:400px;height:250px" id="product-chart-canvas"></canvas>
                             </div>
                         </div>
                     </div>
@@ -333,10 +329,8 @@
                 <div class="bq-3 bq container grid">
                     <div class="bq-title" onclick="toggleContent(this)">
                         <span class="arrow down"><i class="uil uil-angle-double-down"></i></span>
-                        <div class="title-wrapper">
-                            
-                            <h4 id="chart-title" style="color: #000000;"><i class="uil uil-trophy"></i> Top Product <i class="uil uil-trophy"></i></h4>
-                            
+                        <div class="title-wrapper">                            
+                            <h4 id="chart-title" style="color: #000000;"><i class="uil uil-trophy"></i> Top Product <i class="uil uil-trophy"></i></h4>                            
                         </div>
                         <span class="arrow down"><i class="uil uil-angle-double-down"></i></span>
                     </div>
@@ -364,7 +358,7 @@
                             <div style="flex: 1; display: flex; justify-content: center; align-items: center; text-align: center; margin-right: 20px;">
                                 <p id="chartDataContainer" style="text-align:left ;color: #000000;"></p>
                             </div>                            
-                        </div>        
+                        </div>      
                     </div>
                 </div>
 
@@ -447,7 +441,7 @@
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <div class="canvas-container1" style="width: 400px;"><br>
+                                    <div class="canvas-container1" style="width: 300px;"><br>
                                         <h4 id="chart-label-bq5-category">Bike Category Preference Orders</h4>
                                         <canvas id="gender-category" height="280px"></canvas>
                                     </div>
