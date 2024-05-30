@@ -407,6 +407,7 @@ canvas {
   background-color: #9b73ef;
   color: black;
   padding-bottom: 1px;
+  border: 5px outset #4e3387;
 }
 
 .team-profile__member:hover ,
