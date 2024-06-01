@@ -68,16 +68,27 @@
             color: #000000;
         }
     
-        /* Dataset link styles */
         .dataset-link {
-            color: #007bff;
+            color: initial; 
             text-decoration: none;
+            border-bottom: 2px solid ; 
+            transition: color 0.7s ease, border-bottom-color 0.8s ease;
         }
-    
-        /* Dataset link on hover */
+
+        /* Hover state */
         .dataset-link:hover {
-            text-decoration: underline;
+            color: #6E47C1; 
+            border-bottom-color: #6E47C1; 
         }
+
+        iframe {
+            transform-origin: 0 0;
+            transform: scale(1);
+            margin-top: 20px;
+            width: 100%;  
+            height: 88vh; 
+            border-radius: 10px;
+            bor
 
     </style>
     <body>
@@ -150,8 +161,10 @@
                 <br>Dataset condition still has duplicate data so it must be cleaned and reduce columns that are not used according to the project scope.</p>
                 <a class="dataset-link capstone-section__link" href="https://www.kaggle.com/datasets/sadiqshah/bike-sales-in-europe">bike.sales.europe <i class="uil uil-external-link-alt"></i></a>
                 <br>
+                <iframe src="Bike-Sales.html" title="Bike Sales" >
+                </iframe>
                 <hr style="margin-top: 20px;">
-            </section>           
+            </section>         
 
             <section class="root-cause-analysis section"> 
                               

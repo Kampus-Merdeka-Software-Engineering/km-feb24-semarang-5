@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+        .data {
+            width: 90%;
+            margin: 20px auto;
+        }
+        h2 {
+            text-align: center;
+            color: white;
+            font-weight: 400;
+            font-size: 35px;
+        }
+        p{
+            color: white;
+            text-align: center;
+        }
+        #tables5 {
+            width: 100%;
+            background-color: #f9f9f9;
+            border-collapse: collapse;
+        }
+        #tables5 th, #tables5 td {
+            padding: 10px;
+            text-align: center;
+            white-space: nowrap;
+            font-size: 12px;
+        }
+        #tables5 th {
+            background-color: #6E47C1;
+            color: white;
+            text-align: left;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        table.dataTable>thead .sorting:before, 
+        table.dataTable>thead .sorting:after, 
+        table.dataTable>thead .sorting_asc:before, 
+        table.dataTable>thead .sorting_asc:after, 
+        table.dataTable>thead .sorting_desc:before, 
+        table.dataTable>thead .sorting_desc:after, 
+        table.dataTable>thead .sorting_asc_disabled:before, 
+        table.dataTable>thead .sorting_asc_disabled:after, 
+        table.dataTable>thead .sorting_desc_disabled:before, 
+        table.dataTable>thead .sorting_desc_disabled:after {
+            position: absolute;
+            bottom: .9em;
+            display: none;
+            opacity: .3;
+        }
+        .dataTables_wrapper .dataTables_paginate .paginate_button {
+            padding: 0.5em 1em;
+            margin: 0.2em;
+            border: 1px solid black;
+            background-color: #F3F8FF;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 400;
+        }
+        .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+            background-color: #ffffff;
+            color: #fff;
+        }
+        .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active{
+            background-color: #ffffff;
+        }
+
+        a.page-link{
+            text-decoration: none;
+            color: black;
+        }
+        #tables5 {
+            padding-top: 20px;
+            background-color: transparent;
+        }
+        div.dataTables_wrapper div.dataTables_filter input {
+            margin-left: .5em;
+            display: inline-block;
+            width: auto;
+            background-color: white;
+            color: black;
+            outline-color: black;
+        }
+        div.dataTables_wrapper div.dataTables_length select {
+            width: auto;
+            display: inline-block;
+            background-color: white;
+            color: black;
+            outline-color: black;
+        }
+        div.dataTables_wrapper div.dataTables_filter label,
+        div.dataTables_wrapper div.dataTables_length label,
+        div.dataTables_wrapper div.dataTables_info {
+            color: white;
+        }
+        li.paginate_button.page-item.active{
+            background-color: #f6fc3f;
+            color: black;
+        }
+        .dataTables_wrapper {
+            position: relative;
+            clear: both;
+            zoom: 0.9;
+        }
+                
+        
+        
+    </style>
+    <title>Bike Sales </title>
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=CASwCLpgFgKi&format=png&color=000000" type="image/png">
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+
+    <div class="data">
+        <h2>Bike Sales</h2>
+        <p>United States and Canada</p>
+        
+        <table id="tables5" class="display" style="width:100%"></table>
+    </div>
+
+    <script>
+        // data tables section
+        function dataTable() {
+            fetch('assets/json/semester.json')
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+
+                    $('#tables5').DataTable({
+                        data: data,
+                        columns: [
+                            { title: 'Date', data: 'Date' },
+                            { title: 'Customer Age', data: 'Customer_Age' },
+                            { title: 'Customer Gender', data: 'Customer_Gender' },
+                            { title: 'Country', data: 'Country' },
+                            { title: 'State', data: 'State' },
+                            { title: 'Sub Category', data: 'Sub_Category' },
+                            { title: 'Product', data: 'Product' },
+                            { title: 'Order Quantity', data: 'Order_Quantity' },
+                            { title: 'Unit Cost', data: 'Unit_Cost' },
+                            { title: 'Unit Price', data: 'Unit_Price' },
+                            { title: 'Profit', data: 'Profit' },
+                            { title: 'Cost', data: 'Cost' },
+                            { title: 'Revenue', data: 'Revenue' }
+                        ],
+                        responsive: true,
+                        autoWidth: false,
+                        pagingType: 'simple_numbers'
+                    });
+                });
+        }
+
+        window.onload = function() {
+            dataTable();
+        }
+    </script>
+</body>
+</html>
