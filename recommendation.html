@@ -20,7 +20,7 @@
         <title> Team 5 Semarang </title>
         <link rel="icon" href="https://img.icons8.com/?size=100&id=CASwCLpgFgKi&format=png&color=000000" type="image/png">
     </head>
-    <style>
+        <style>
         
         .image-section {
             position: relative;
@@ -107,11 +107,13 @@
             background-color: #FEFAE5;
             border-radius: 40px;
             box-shadow: inset 0 3px 15px #F2E8B6;
+            
         }
 
         form {
             display: flex;
             flex-direction: column;
+            
         }
 
         .form-group {
@@ -132,6 +134,7 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             box-sizing: border-box;
+            box-shadow: inset 0 1px 1px #000000;
         }
 
         textarea {
@@ -158,7 +161,8 @@
 
         button {
             padding: 10px 20px;
-            background-color: #FF9500;
+            background-color: #ffb753;
+            box-shadow:  0 1px 2px #000000;
             color: black;
             border: none;
             border-radius: 10px;
@@ -172,19 +176,19 @@
         }
 
         button:hover {
-            background-color: #6E47C1;
-            color: black;
+            background-color: #000000;
+            color: #ddc0ff;
             font-weight: bold;
             transform: scale(1.1); 
         }
         table {
             width: 100%; 
             table-layout: fixed;
-            border-collapse: collapse; /* Tambahkan ini jika Anda ingin menghilangkan jarak antara sel */
+            border-collapse: collapse; 
         }
         td {
             vertical-align: top;
-            padding: 10px; /* Tambahkan padding jika diperlukan */
+            padding: 10px; 
         }
         td label{
             text-align: left;
@@ -416,6 +420,25 @@
         <a href="#" class="scrollup" id="scroll-up">
             <i class="uil uil-top-arrow-from-top scrollup__icon"></i>
         </a>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            function scrollHeader() {
+                const nav = document.getElementById('header');
+                // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
+                if (this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header');
+            }
+            window.addEventListener('scroll', scrollHeader);
+
+            /*==================== SHOW SCROLL UP ====================*/ 
+            function scrollUp() {
+                const scrollUp = document.getElementById('scroll-up');
+                // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+                if (this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll');
+            }
+            window.addEventListener('scroll', scrollUp);
+            });
+
+        </script>
 
         <!--==================== SWIPER JS ====================-->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
