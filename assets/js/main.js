@@ -186,27 +186,27 @@ function submitForm() {
   var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (name === '') {
-      alert("Name cannot be empty");
+      showAlert("Name cannot be empty");
       return;
   }
   
   if (name.length <= 5) {
-      alert("Name must be more than 5 characters");
+      showAlert("Name must be more than 5 characters");
       return;
   }
 
   if (email === '') {
-      alert("Email cannot be empty");
+      showAlert("Email cannot be empty");
       return;
   }
   
   if (message === '') {
-      alert("Message cannot be empty");
+      showAlert("Message cannot be empty");
       return;
   }
 
   if (!emailPattern.test(email)) {
-      alert("Email should contain '@' and a domain like '.com'");
+      showAlert("Email should contain '@' and a domain like '.com'");
       return;
   }
 
@@ -214,15 +214,36 @@ function submitForm() {
   messages.push({ name: name, email: email, message: message });
   localStorage.setItem('messages', JSON.stringify(messages));
 
-  alert("Message has been sent!");
+  // Show popup
+  var popup = document.querySelector('.popup');
+  popup.style.display = 'block';
 
+  // Reset form after submit
   document.getElementById('recommendation-form').reset();
+}
+
+function showAlert(message) {
+  // Displaying alert in the popup
+  var popupText = document.getElementById('popup-text');
+  popupText.textContent = message;
+  var popup = document.getElementById('pop-rules');
+  popup.style.display = 'block';
+}
+
+function closePopup() {
+  // Closing the popup
+  var popup = document.getElementById('pop-rules');
+  popup.style.display = 'none';
 }
 
 window.onload = function() {
   displayData();
 }
 
+// Fungsi untuk menutup pop-up
+document.querySelector('.popup button').addEventListener('click', function() {
+  document.querySelector('.popup').style.display = 'none';
+});
 
 
 function saveData(name, email, message) {
@@ -327,12 +348,6 @@ function editMessage(index) {
       displayData();
   }
 }
-
-// Memastikan data ditampilkan saat halaman dimuat
-window.onload = function() {
-  displayData();
-}
-
 
 /*==================== TESTIMONIAL ====================*/
 fetch('/assets/json/q1.json')
