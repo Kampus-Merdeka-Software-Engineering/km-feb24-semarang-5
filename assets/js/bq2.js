@@ -1,3 +1,4 @@
+
 window.onload = function () {
  //manual input
  var revenueChartCanvas = document.getElementById('revenue-chart-canvas').getContext('2d');
@@ -987,8 +988,6 @@ const usiaOrderScatter = async () => {
         console.error('Error processing data:', error);
     }
 };
-
-
 
 
 
