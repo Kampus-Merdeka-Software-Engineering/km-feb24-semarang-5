@@ -158,9 +158,13 @@
                             { title: 'Cost', data: 'Cost' },
                             { title: 'Revenue', data: 'Revenue' }
                         ],
+                        lengthMenu: [5,10,25,50,75,100], 
                         responsive: true,
                         autoWidth: false,
-                        pagingType: 'simple_numbers'
+                        pageLength: 10,
+                        paging :{
+                            type :'simple'
+                        }
                     });
                 });
         }
