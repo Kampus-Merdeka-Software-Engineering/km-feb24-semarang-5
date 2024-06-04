@@ -68,27 +68,30 @@
             color: #000000;
         }
     
+        /* Dataset link styles */
         .dataset-link {
-            color: initial; 
+            color: initial; /* Set your initial color */
             text-decoration: none;
-            border-bottom: 2px solid ; 
+            border-bottom: 2px solid ; /* Simulate underline */
             transition: color 0.7s ease, border-bottom-color 0.8s ease;
         }
 
         /* Hover state */
         .dataset-link:hover {
-            color: #6E47C1; 
-            border-bottom-color: #6E47C1; 
+            color: #6E47C1; /* Set your hover color */
+            border-bottom-color: #6E47C1; /* Simulate underline with hover color */
         }
 
         iframe {
             transform-origin: 0 0;
             transform: scale(1);
             margin-top: 20px;
-            width: 100%;  
-            height: 88vh; 
+            width: 100%;  /* Lebar tetap */
+            height: 88vh; /* Tinggi awal */
             border-radius: 10px;
-            bor
+            border: transparent;
+        }
+
 
     </style>
     <body>
@@ -120,7 +123,6 @@
                 
             </div>
             <div class="nav__btns">
-
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -130,8 +132,6 @@
         </header>
        
         <main class="main">
-            <br>
-
             <section class="capstone-section" >
                 <div class="capstone-section__overlay"></div> 
                 <div class="capstone-section__content">
@@ -142,16 +142,12 @@
             </section>
 
             <section class="project-scope section"> 
-                <h1 class="section-title" style="text-align: center;">Project Overview</h1>
-                
+                <h1 class="section-title" style="text-align: center;">Project Overview</h1>                
                 <div class="overview-chart-container" >
                     <!-- <img src="/assets/img/pb.png" style="width: 80%;" alt="Project Background" class="project-image"> -->
                     <canvas id="revenueChart" width="100%"></canvas>
                 </div>
-                
-            
                 <p class="section-description" style="text-align: center;">The bikes category revenue has decreased from 2015 to 2016, <br> hence the goal to increase the bikes sales trend by about 10% in the next 12 months.</p></td>
-               
                 <hr style="margin-top: 20px;">  
             </section>    
 
@@ -164,7 +160,7 @@
                 <iframe src="Bike-Sales.html" title="Bike Sales" >
                 </iframe>
                 <hr style="margin-top: 20px;">
-            </section>         
+            </section>           
 
             <section class="root-cause-analysis section"> 
                               
@@ -186,6 +182,13 @@
             </section>   
 
             <section class="results section"> 
+                <h1 class="section-title" style="text-align: center;">Dashboard Bike Sales</h1>
+              
+                <iframe src="dashboard.html" title="Dashboard" 
+                style="height: 240vh; width: 100%; resize: none; margin-bottom: 20px;"></iframe>
+
+
+
                 <h1 class="section-title" style="text-align: center;">Research Insight</h1>
                 <div class="bq-1 bq container grid">
                     <div class="bq-title" onclick="toggleContent(this)">
@@ -368,7 +371,7 @@
                             <div id="top-product-chart" class="chart">
                                 <canvas style="width: 450px;" id="top-product-chart-canvas"></canvas>
                             </div>
-                            <div style="flex: 1; display: flex; justify-content: center; align-items: center; text-align: center; margin-right: 20px;">
+                            <div style="flex: 1; display: flex; justify-content: center; align-items: center; text-align: center; margin-right: 20px;"> 
                                 <p id="chartDataContainer" style="text-align:left ;color: #000000;">Please choose sorting values to get summary</p>
                             </div>                            
                         </div>      
@@ -543,12 +546,12 @@
             </footer>
         </main>
 
-       
-        
+
         <!--==================== SCROLL TOP ====================-->
         <a href="#" class="scrollup" id="scroll-up">
             <i class="uil uil-top-arrow-from-top scrollup__icon"></i>
         </a>
+
         <script>
             document.addEventListener('DOMContentLoaded', function() {
             function scrollHeader() {
@@ -569,9 +572,6 @@
 
         </script>
 
-        <!--==================== SWIPER JS ====================-->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
         <script src="assets/js/bq1.js"></script>
@@ -579,11 +579,9 @@
         <script src="assets/js/bq3.js"></script>
         <script src="assets/js/bq4.js"></script>
 
-
         <!-- Chart.js Library -->
         <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>        
-
         
 
         <!-- ChartDataLabels Plugin -->
