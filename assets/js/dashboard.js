@@ -836,14 +836,11 @@ const displayScorecard = (data) => {
 
 const PieGender = async () => {
     const data = [
-        { "Customer_Gender": "M", "Jumlah": "976", "Country": "United States" },
-        { "Customer_Gender": "F", "Jumlah": "864", "Country": "United States" },
-        { "Customer_Gender": "M", "Jumlah": "151", "Country": "Canada" },
-        { "Customer_Gender": "F", "Jumlah": "159", "Country": "Canada" }
+        { "Customer_Gender": "Male", "Jumlah": "976", "Country": "United States" },
+        { "Customer_Gender": "Female", "Jumlah": "864", "Country": "United States" },
+        { "Customer_Gender": "Male", "Jumlah": "151", "Country": "Canada" },
+        { "Customer_Gender": "Female", "Jumlah": "159", "Country": "Canada" }
     ];
-
-    // const selectedCountry = document.getElementById('bq-5-dropdown').value;
-    // const filteredData = selectedCountry === 'All' ? data : data.filter(item => item.Country === selectedCountry);
 
     const genderOrderMap = data.reduce((acc, item) => {
         const gender = item.Customer_Gender;

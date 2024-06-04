@@ -370,7 +370,7 @@ const subRevenue = async () => {
                     tooltip: {
                         callbacks: {
                             label: function(context) {
-                                return `${context.dataset.label}: $${context.raw.toLocaleString()}`;
+                                return `${context.dataset.label}: ${context.raw.toLocaleString()}`;
                             }
                         }
                     },
@@ -378,7 +378,7 @@ const subRevenue = async () => {
                         anchor: 'middle',
                         align: 'end',
                         color: 'black',
-                        formatter: (value) => `$${value.toLocaleString()}`
+                        formatter: (value) => `${value.toLocaleString()}`
                     }
                 },
                 scales: {
@@ -502,7 +502,7 @@ const warnaRevenue = async () => {
                     tooltip: {
                         callbacks: {
                             label: function(context) {
-                                return `${context.dataset.label}: $${context.raw.toLocaleString()}`;
+                                return `${context.dataset.label}: ${context.raw.toLocaleString()}`;
                             }
                         }
                     },
@@ -510,7 +510,7 @@ const warnaRevenue = async () => {
                         anchor: 'middle',
                         align: 'end',
                         color: 'black',
-                        formatter: (value) => `$${value.toLocaleString()}`
+                        formatter: (value) => `${value.toLocaleString()}`
                     }
                 },
                 scales: {
