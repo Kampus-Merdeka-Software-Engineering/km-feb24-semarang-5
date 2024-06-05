@@ -1082,7 +1082,7 @@ textarea{
     padding: 2rem .25rem 4 rem;
   }
   body{
-    zoom :0.75;
+    zoom :0.8;
     max-height:580px;
   }
 
@@ -1107,6 +1107,11 @@ textarea{
     padding-top: 20px;
   }
 
+}
+@media screen and (min-width:500px){
+  .main{
+    margin: 5%;
+  }
 }
 
 @media screen and (min-width:768px){
@@ -1137,7 +1142,7 @@ textarea{
     display: flex;
   }
   body{
-    zoom :0.85;
+    zoom :1;
   }
  
 
@@ -1152,7 +1157,24 @@ textarea{
     margin-top: 20px;
   }
   body{
-    zoom:0.96;
+    zoom:1.32;
   }
 
 }
+
+@media screen and (min-width : 2024px){
+    html {
+      background-image: url('/assets/img/unavailable.png');
+      background-size: contain; 
+      background-size: 25%;
+      background-position: center; 
+      background-repeat: no-repeat;
+      height: 500%;
+      width: 100%;
+      margin-top: 15%;
+    }
+  
+    body {
+      display: none;
+    }
+  }
