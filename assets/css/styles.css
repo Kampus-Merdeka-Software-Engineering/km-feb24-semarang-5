@@ -798,10 +798,10 @@ textarea{
   cursor:pointer;
 }
 
-@media screen and (max-width : 767px){
+/* @media screen and (max-width : 767px){
   .nav__menu{
     position: fixed;
-    bottom:-15%;
+    top:0;
     left:0;
     width:100%;
     background-color:#fff956;
@@ -811,18 +811,16 @@ textarea{
     transition: .3s ;
   }
   footer{
-    top:0px;
+    bottom:0px;
     position: fixed;
     width:100%;
-
   }
   main{
     margin-top:12%;
     margin-bottom:20%;
 
-  }
-  
-}
+  }  
+} */
 
 .nav__list{
   grid-template-columns: repeat(3,3fr);
@@ -973,11 +971,59 @@ textarea{
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width:350px){
-  .container{
-    margin-left:var(--mb-1);
-    margin-right: var(--mb-1);
+@media screen and (max-width: 380px) {
+  html {
+    background-image: url('/assets/img/unavailable.png');
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin: 10%;
   }
+
+  body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+    display: none;
+  }
+}
+@media screen and (min-width:380px){
+  .nav__menu{
+    padding: 2rem .25rem 4 rem;
+  }
+
+  .nav__list{
+    column-gap: 0;
+  }
+
+  .home__content{
+    grid-template-columns: .25fr 3fr;
+  }
+  html{
+    zoom :0.75;
+    max-height:580px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header{
+    top:0;
+  }
+  footer{
+    bottom:0;
+    margin: 0;
+  }
+  .nav__btns,
+  .nav__close{
+    display: none;
+  }
+  iframe{
+    height: auto;
+  }
+}
+
+@media screen and (max-width:500px){
 
   .nav__menu{
     padding: 2rem .25rem 4 rem;
@@ -990,20 +1036,75 @@ textarea{
   .home__content{
     grid-template-columns: .25fr 3fr;
   }
+  body{
+    zoom :0.6;
+    max-height:580px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header{
+    top:0;
+  }
+  footer{
+    bottom:0;
+    margin: 0;
+  }
+  
+  main{
+    margin-top: 8%;
+  }
+  .nav__btns,
+  .nav__close{
+    display: none;
+  }
+  .table-team{
+    background-image: none;
+  }
+  iframe{
+    height: 100vh;
+    /* display: block; */
+  }
+}
 
+.nav__btns,
+.nav__close{
+  display: none;
 }
 
 /* For medium devices */
-@media screen and (min-width:568px){
-  .home__content{
-    grid-template-columns: max-content 1fr 1fr;
+@media screen and (min-width:490px){
+  .container{
+    margin-left: auto;
+    margin-right: auto;
   }
-  .home__data{
-    grid-column: initial;
-  } 
-  .home__img{
-    order:9;
-    justify-self: center;
+
+  .nav__menu{
+    padding: 2rem .25rem 4 rem;
+  }
+  body{
+    zoom :0.75;
+    max-height:580px;
+  }
+
+  .nav__list{
+    column-gap: 0;
+  }
+
+  .home__content{
+    grid-template-columns: .25fr 3fr;
+  }
+
+  header{
+    top:0;
+    zoom :0.90;
+  }
+  footer{
+    bottom:0;
+    margin: 0;
+  }
+  
+  main{
+    padding-top: 20px;
   }
 
 }
@@ -1014,28 +1115,6 @@ textarea{
     margin-right: auto;
   }
 
-  body{
-    margin:0;
-  }
-
-  .section{
-    padding:2rem 0 2rem;
-  }
-
-  .section__subtitle{
-    margin-bottom: 4rem;
-  }
-
-  .header{
-    top:0;
-    height: 60px;
-    bottom: initial;
-  }
-
-/*   .header,
-  .main{
-    padding: 0 1rem;
-  } */
 
   .nav{
     height:calc(var(--header-height)+ 1.5rem);
@@ -1048,6 +1127,7 @@ textarea{
     display:none;
   }
 
+
   .nav__list{
     display: flex;
     column-gap: 2rem;
@@ -1056,33 +1136,23 @@ textarea{
     margin-left: auto;
     display: flex;
   }
+  body{
+    zoom :0.85;
+  }
  
 
-  @media screen and (min-width : 1024px){
-    .header,
-    .main{
-      padding:0;
-    }
-  
-    .home__social{
-      transform: translateX(-6rem);
-    }
-  
-    .services__container{
-      grid-template-columns:repeat(3,238px);
-    }
 
-    .portfolio__content{
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .about__info{
-      display: flex;
-      justify-content: space-evenly;
-      margin-bottom:var(--mb-2-5);
-    }
-    .abouts__buttons{    
-      padding-left: 35%;
-    }
+}
+@media screen and (min-width : 1024px){
+  .header,
+  .main{
+    padding:0;
   }
+  main{
+    margin-top: 20px;
+  }
+  body{
+    zoom:0.96;
+  }
+
 }
