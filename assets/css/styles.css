@@ -569,13 +569,20 @@ canvas {
 
 
 .reco-man{
+  text-align: left; 
+  font-size:13px;
+  color: #000000; 
+}
+
+.reco-man-img{
   background-image: url('/assets/img/man-hand.png');
+  height: 100%;
+  width: 200px;
   text-align: center;
   background-repeat: no-repeat;
   background-size: contain; 
-  /* background-attachment: fixed; */
   transform-origin: center;
-  background-position: left;
+  background-position: center;
 }
 
 
@@ -593,32 +600,31 @@ canvas {
 }
 
 .image-container2 img {
-  max-width: 40%; /* Lebar gambar setidaknya 70% dari kotak konten */
-  max-height: 50%; /* Tinggi gambar setidaknya 70% dari kotak konten */
-  object-fit: contain; /* Objek gambar akan menyesuaikan diri tanpa merubah rasio aspek */
+  max-width: 40%; 
+  max-height: 50%; 
+  object-fit: contain; 
 }
 
 
 
 .parent-container {
-  text-align: center; /* Menjadikan isi teks menjadi pusat */
+  text-align: center; 
 }
 
 .recommendation-title2 {
-  display: inline-flex; /* Mengubah display menjadi inline-flex */
+  display: inline-flex; 
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
   padding: 5px;
   border: 1px solid #f6fc3f;
-  /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); */
   border-radius: 8px;
   margin: 5px;
   width: 498px;
 }
 
 .recommendation-content {
-  display: none; /* Mulai dengan disembunyikan */
+  display: none; 
 }
 .recommendation-content.show {
   display: block;
@@ -798,30 +804,6 @@ textarea{
   cursor:pointer;
 }
 
-/* @media screen and (max-width : 767px){
-  .nav__menu{
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background-color:#fff956;
-    padding: 1.6rem .1rem 1.6rem;
-    box-shadow: 0 -1px 4px rgba(0,0,0,.15);
-    border-radius:1.5rem 1.5rem 0 0;
-    transition: .3s ;
-  }
-  footer{
-    bottom:0px;
-    position: fixed;
-    width:100%;
-  }
-  main{
-    margin-top:12%;
-    margin-bottom:20%;
-
-  }  
-} */
-
 .nav__list{
   grid-template-columns: repeat(3,3fr);
   gap : 1rem;
@@ -969,6 +951,10 @@ textarea{
 }
 
 
+.nav__btns,
+.nav__close{
+  display: none;
+}
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 380px) {
@@ -989,18 +975,17 @@ textarea{
     display: none;
   }
 }
+
+
 @media screen and (min-width:380px){
   .nav__menu{
     padding: 2rem .25rem 4 rem;
   }
-
   .nav__list{
     column-gap: 0;
+    zoom:0.8;
   }
 
-  .home__content{
-    grid-template-columns: .25fr 3fr;
-  }
   html{
     zoom :0.75;
     max-height:580px;
@@ -1013,20 +998,88 @@ textarea{
   footer{
     bottom:0;
     margin: 0;
+    width: 100%;
   }
   .nav__btns,
   .nav__close{
     display: none;
   }
-  iframe{
-    height: auto;
+  .dashboardfm {
+    zoom: 0;   
+    height: 100vh;
   }
+
+  /* body{
+    zoom: 0.2;
+
+  } */
+  main {
+    margin-top: 10%;
+  }
+
 }
 
-@media screen and (max-width:500px){
+
+/* For medium devices  */
+@media screen and (min-width:480px){
+    .nav__menu{
+      padding: 2rem .25rem 4 rem;
+    }
+    .dashboardfm{
+      height: 320vh;
+      /* zoom: 1; */
+    }
+  
+    .bikeSales{
+      display: block;
+      zoom:0;
+    }
+  
+    .nav__list{
+      column-gap: 0;
+    }
+  
+    .home__content{
+      grid-template-columns: .25fr 3fr;
+    }
+    body{
+      zoom :0.3;
+      max-height:580px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    header{
+      top:0;
+    }
+    footer{
+      bottom:0;
+      margin: 0;
+      width: 100%;
+    }
+    
+    main{
+      margin-top: 8%;
+    }
+    .nav__btns,
+    .nav__close{
+      display: none;
+    }
+    .table-team{
+      background-image: none;
+    }
+}
+
+
+@media screen and (min-width:500px){
 
   .nav__menu{
     padding: 2rem .25rem 4 rem;
+  }
+  .dashboardfm
+  {
+    zoom:1;
+    height: 145vh;
+    /* margin-bottom: 20px; */
   }
 
   .nav__list{
@@ -1037,7 +1090,7 @@ textarea{
     grid-template-columns: .25fr 3fr;
   }
   body{
-    zoom :0.6;
+    zoom :0.5;
     max-height:580px;
     margin-left: auto;
     margin-right: auto;
@@ -1048,10 +1101,12 @@ textarea{
   footer{
     bottom:0;
     margin: 0;
+    width: 100%;
   }
-  
-  main{
-    margin-top: 8%;
+
+  .main{
+    margin-top: 6%;
+    padding:0;
   }
   .nav__btns,
   .nav__close{
@@ -1060,107 +1115,131 @@ textarea{
   .table-team{
     background-image: none;
   }
-  iframe{
-    height: 100vh;
-    /* display: block; */
-  }
 }
 
-.nav__btns,
-.nav__close{
-  display: none;
-}
-
-/* For medium devices */
-@media screen and (min-width:490px){
-  .container{
-    margin-left: auto;
-    margin-right: auto;
-  }
+@media screen and (min-width:560px){
 
   .nav__menu{
     padding: 2rem .25rem 4 rem;
   }
-  body{
-    zoom :0.8;
-    max-height:580px;
+  .dashboardfm
+  {
+    zoom:0;
+    height: 200vh;
+    margin-bottom: 5%;
+    
   }
-
   .nav__list{
     column-gap: 0;
+    zoom:0.85;
   }
+
 
   .home__content{
     grid-template-columns: .25fr 3fr;
   }
-
+  body{
+    zoom :0.9;
+    max-height:580px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   header{
     top:0;
-    zoom :0.90;
   }
   footer{
     bottom:0;
     margin: 0;
-  }
-  
-  main{
-    padding-top: 20px;
+    width: 100%;
   }
 
-}
-@media screen and (min-width:500px){
   .main{
-    margin: 5%;
-  }
-}
-
-@media screen and (min-width:768px){
-  .container{
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-
-  .nav{
-    height:calc(var(--header-height)+ 1.5rem);
-    column-gap: 1rem;
-  }
-
-  .nav__icons,
-  .nav__close,
-  .nav__toggle{
-    display:none;
-  }
-
-
-  .nav__list{
-    display: flex;
-    column-gap: 2rem;
-  }
-  .nav__menu{
-    margin-left: auto;
-    display: flex;
-  }
-  body{
-    zoom :1;
-  }
- 
-
-
-}
-@media screen and (min-width : 1024px){
-  .header,
-  .main{
+    margin-top: 5%;
     padding:0;
   }
-  main{
-    margin-top: 20px;
+  .nav__btns,
+  .nav__close{
+    display: none;
+  }
+  .table-team{
+    background-image: none;
+  }
+}
+
+@media screen and (min-width : 824px){
+  .header{
+    padding:0;
+  }
+  .main{
+    margin-top: 7%;
+    padding:0;
   }
   body{
-    zoom:1.32;
+    zoom:1;
+  }
+  .dashboardfm{
+    zoom:0.5;
+    height: 500vh;
   }
 
+
 }
+
+@media screen and (min-width : 1024px){
+  .header{
+    padding:0;
+  }
+  .main{
+    margin-top: 5%;
+    padding:0;
+  }
+  body{
+    zoom:1.3;
+  }
+  .dashboardfm{
+    zoom:0.5;
+    height: 250vh;
+  }
+}
+
+@media screen and (min-width : 1224px){
+  .header{
+    padding:0;
+  }
+  .main{
+    margin-top: 5%;
+    padding:0;
+  }
+  body{
+    zoom:1.4;
+  }
+  .dashboardfm{
+    zoom:0.5;
+    height: 250vh;
+  }
+}
+
+
+@media screen and (min-width : 1624px){
+  .header{
+    padding:0;
+  }
+  .main{
+    margin-top: 5%;
+    padding:0;
+  }
+  body{
+    zoom:1.5;
+  }
+  .dashboardfm{
+    zoom:0.5;
+    height: 250vh;
+  }
+}
+
+
+
+
 
 @media screen and (min-width : 2024px){
     html {
