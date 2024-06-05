@@ -987,7 +987,7 @@ textarea{
   }
 
   html{
-    zoom :0.75;
+    zoom :0.5;
     max-height:580px;
     margin-left: auto;
     margin-right: auto;
@@ -1064,9 +1064,9 @@ textarea{
     .nav__close{
       display: none;
     }
-    .table-team{
+    /* .table-team{
       background-image: none;
-    }
+    } */
 }
 
 
@@ -1112,9 +1112,7 @@ textarea{
   .nav__close{
     display: none;
   }
-  .table-team{
-    background-image: none;
-  }
+  
 }
 
 @media screen and (min-width:560px){
@@ -1161,9 +1159,7 @@ textarea{
   .nav__close{
     display: none;
   }
-  .table-team{
-    background-image: none;
-  }
+  
 }
 
 @media screen and (min-width : 824px){
