@@ -971,7 +971,7 @@ textarea{
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
   html {
     background-image: url('/assets/img/unavailable.png');
     background-size: contain; 
@@ -989,8 +989,7 @@ textarea{
     display: none;
   }
 }
-@media screen and (min-width:350px){
-
+@media screen and (min-width:380px){
   .nav__menu{
     padding: 2rem .25rem 4 rem;
   }
@@ -1002,8 +1001,8 @@ textarea{
   .home__content{
     grid-template-columns: .25fr 3fr;
   }
-  body{
-    zoom :0.5;
+  html{
+    zoom :0.75;
     max-height:580px;
     margin-left: auto;
     margin-right: auto;
@@ -1052,7 +1051,7 @@ textarea{
   }
   
   main{
-    margin-top: 9%;
+    margin-top: 8%;
   }
   .nav__btns,
   .nav__close{
@@ -1128,9 +1127,6 @@ textarea{
     display:none;
   }
 
-  main{
-    margin-top: 20px;
-  }
 
   .nav__list{
     display: flex;
