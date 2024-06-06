@@ -936,23 +936,23 @@ textarea{
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 380px) {
-  body {
+  html {
     background-image: url('/assets/img/unavailable.png');
     background-size: contain; 
     background-position: center; 
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
+    height: 100%;
+    width: 100%;
+    margin: 10%;
   }
 
-  main,
-  header,
-  footer {
+  body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
     display: none;
   }
 }
-
 
 
 @media screen and (min-width:380px){
@@ -1175,6 +1175,9 @@ textarea{
     zoom:2;
   }
 }
+
+
+
 
 @media screen and (min-width : 2024px){
     html {
