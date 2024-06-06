@@ -127,8 +127,6 @@ const aggregateTotalProduct = (data) => {
     }));
 };
 
-
-
 const generateSalesChart = (data) => {
     const monthlyData = aggregateTotalProduct(data);
 
@@ -380,7 +378,6 @@ const hexToRgbA = (hex, alpha) => {
     return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 };
 
-
 typeRevenue = async () => {
     try {
         const data = await fetchSemesterData();
@@ -455,34 +452,6 @@ typeRevenue = async () => {
 };
 let typeRevenueChart;
 
-const initializeDashboard = async () => {
-    try {
-
-        // Call the fetchSemesterData function with the selected country and year as query parameters
-        const data = await fetchSemesterData();
-
-        // Generate the charts with the filtered data
-        generateProfitChart(data);
-        generateRevenueChart(data);
-        generateCostChart(data);
-        generateSalesChart(data);
-        PieGender(data);
-        warnaRevenue(data);
-        usiaRevenueScatter(data);
-        subRevenue(data);
-        typeRevenue(data);
-
-        // Display scorecards with the filtered data
-        displayScorecard(data);
-
-    } catch (error) {
-        console.error('Initialization error:', error);
-    }
-};
-
-
-document.addEventListener('DOMContentLoaded', initializeDashboard);
-
 
 const revenue_sub = async () => {
     try {
@@ -494,99 +463,7 @@ const revenue_sub = async () => {
         throw error;
     }
 };
-// const subRevenue = async () => {
-//     try {
-//         const data = await revenue_sub();
 
-//         const revenueSizeMap = {};
-//         const orderSizeMap = {};
-
-//         data.forEach(item => {
-//             const Size = item.Sub_Category;  // Using 'Size' from the data
-//             const revenue = Number(item.total_revenue);
-
-//             if (!revenueSizeMap[Size]) {
-//                 revenueSizeMap[Size] = 0;
-//             }
-
-//             revenueSizeMap[Size] += revenue;
-//         });
-
-//         const labels = Object.keys(revenueSizeMap).sort((a, b) => a.localeCompare(b));
-//         const revenueData = labels.map(Size => revenueSizeMap[Size]);
-
-//         const colors = {
-//             'Touring Bikes': '#f10090',
-//             'Mountain Bikes': '#0072f0',
-//             'Road Bikes': '#ffa800'
-//         };
-
-//         const ctx = document.getElementById('Subcategories-sales').getContext('2d');
-
-//         if (subRevenueChart) {
-//             subRevenueChart.destroy();
-//         }
-
-//         subRevenueChart = new Chart(ctx, {
-//             type: 'bar',
-//             data: {
-//                 labels: labels,
-//                 datasets: [
-//                     {
-//                         label: 'Total Revenue',
-//                         data: revenueData,
-//                         backgroundColor: labels.map(Size => colors[Size]),
-//                         borderColor: 'black',
-//                         borderWidth: 1,
-//                         yAxisID: 'y'
-//                     }
-//                 ]
-//             },
-//             options: {
-//                 plugins: {
-//                     tooltip: {
-//                         callbacks: {
-//                             label: function(context) {
-//                                 return `${context.dataset.label}: $${context.raw.toLocaleString()}`;
-//                             }
-//                         }
-//                     },
-//                     datalabels: {
-//                         anchor: 'middle',
-//                         align: 'end',
-//                         color: 'black',
-//                         formatter: (value) => `$${value.toLocaleString()}`
-//                     }
-//                 },
-//                 scales: {
-//                     x: {
-//                         title: {
-//                             display: true,
-//                             text: 'Sub Category'
-//                         },
-//                         ticks: { color: 'black' }
-//                     },
-//                     y: {
-//                         title: {
-//                             display: true,
-//                             text: 'Total Revenue'
-//                         },
-//                         beginAtZero: true,
-//                         ticks: {
-//                             callback: function(value) {
-//                                 return `${value}`;
-//                             },
-//                             color: 'black'
-//                         }
-//                     }
-//                 }
-//             }
-//         });
-
-//     } catch (error) {
-//         console.error('Error processing data:', error);
-//     }
-// };
 const subRevenue = async () => {
     try {
         const data = await fetchSemesterData();
@@ -842,6 +719,9 @@ const PieGender = async () => {
         { "Customer_Gender": "Female", "Jumlah": "159", "Country": "Canada" }
     ];
 
+    // const selectedCountry = document.getElementById('bq-5-dropdown').value;
+    // const filteredData = selectedCountry === 'All' ? data : data.filter(item => item.Country === selectedCountry);
+
     const genderOrderMap = data.reduce((acc, item) => {
         const gender = item.Customer_Gender;
         const count = parseInt(item.Jumlah);
@@ -992,3 +872,30 @@ const usiaRevenueScatter = async () => {
     }
 };
 let AgeScatter;
+
+
+const initializeDashboard = async () => {
+    try {
+
+        // Call the fetchSemesterData function with the selected country and year as query parameters
+        const data = await fetchSemesterData();
+
+        // Generate the charts with the filtered data
+        generateProfitChart(data);
+        generateRevenueChart(data);
+        generateCostChart(data);
+        generateSalesChart(data);
+        PieGender(data);
+        warnaRevenue(data);
+        usiaRevenueScatter(data);
+        subRevenue(data);
+        typeRevenue(data);
+
+        // Display scorecards with the filtered data
+        displayScorecard(data);
+
+    } catch (error) {
+        console.error('Initialization error:', error);
+    }
+};
+document.addEventListener('DOMContentLoaded', initializeDashboard);

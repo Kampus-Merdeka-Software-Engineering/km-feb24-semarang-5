@@ -561,7 +561,6 @@ const warnaRevenue = async () => {
     }
 };
 
-
 document.addEventListener('DOMContentLoaded', () => {
     const dropdown = document.getElementById('bq-6-dropdown');
     dropdown.addEventListener('change', () => {

@@ -1,5 +1,5 @@
 
-/*==================== TESTIMONIAL ====================*/
+/*==================== NYOBA 1 ====================*/
 fetch('/assets/json/q1.json')
   .then(response => response.json())
   .then(data => {
@@ -179,7 +179,6 @@ function updateLabels(selectedCountry, selectedYear) {
   document.getElementById('chart-label-bar').innerHTML = filterText ? `Average Sales <br> in ${filterText}` : `Average Sales`;
 }
 
-
 function processData(data, selectedCountry, selectedYear) {
   const filteredData = data.filter(item => {
     const yearMatch = selectedYear === 'All' || item.Sales_Year.toString() === selectedYear;
@@ -211,9 +210,8 @@ function processData(data, selectedCountry, selectedYear) {
 
   return processedData;
 }
-
-let salesChart; // Global variable to store the chart
-
+// Global variable to store the chart
+let salesChart; 
 function createChart(data) {
     if (salesChart) {
       salesChart.destroy(); // Destroy the existing chart if it exists
@@ -260,9 +258,7 @@ function createChart(data) {
     });
 }
 
-
-
-// chart revenue by years
+// data revenue by years
 const revenue_year = async () => {
     try {
         const response = await fetch('/assets/json/revenue_years.json');
@@ -273,9 +269,8 @@ const revenue_year = async () => {
         throw error;
     }
   };
-  
-  // Fungsi untuk membuat chart
-  const RevenueYearsBar = async () => {
+// chart
+const RevenueYearsBar = async () => {
     const data = await revenue_year();
   
     const years = data.Bikes.map(entry => entry.year);
@@ -315,6 +310,4 @@ const revenue_year = async () => {
       },
       plugins: [ChartDataLabels]
     });
-  };
-  
-// let revenueChart;
+  };  

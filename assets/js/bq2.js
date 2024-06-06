@@ -1,4 +1,4 @@
-
+//manual input data
 window.onload = function () {
  //manual input
  var revenueChartCanvas = document.getElementById('revenue-chart-canvas').getContext('2d');
@@ -352,8 +352,6 @@ const RevenueMonthBar = async () => {
 
 
 
-  
-
 //fetch semester 
 
 const fetchSemesterData = async () => {
@@ -366,7 +364,6 @@ const fetchSemesterData = async () => {
         throw error;
     }
 };
-
 
 const TopProduct = async () => {
     try {
@@ -575,7 +572,6 @@ const TopProduct = async () => {
         console.error('Error fetching the semester data:', error);
     }
 };
-
 
 const usiaRevenueScatter = async () => {
     try {
@@ -988,7 +984,6 @@ const usiaOrderScatter = async () => {
         console.error('Error processing data:', error);
     }
 };
-
 
 
 document.addEventListener('DOMContentLoaded', () => {
