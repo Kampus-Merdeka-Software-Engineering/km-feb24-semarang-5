@@ -42,30 +42,6 @@ const gender_warna = async () => {
     }
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-    const dropdown = document.getElementById('bq-5-dropdown');
-    dropdown.addEventListener('change', () => {
-        sizeGender();
-        typeGender();
-        SubGender();
-        warnaGender();
-        PieGender();
-    });
-
-    // Initial call to render the chart with default data
-    sizeGender();
-    typeGender();
-    SubGender();
-    warnaGender();
-    PieGender();
-});
-
-let sizeChart;
-let typeChart;
-let subChart;
-let warnaChart;
-let pieGenChart;
-
 const sizeGender = async () => {
     try {
         const data = await gender_size();
@@ -450,7 +426,6 @@ const warnaGender = async () => {
     }
 };
 
-
 const PieGender = async () => {
     const data = [
         { "Customer_Gender": "M", "Jumlah": "976", "Country": "United States" },
@@ -512,3 +487,28 @@ const PieGender = async () => {
         }
     });
 };
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const dropdown = document.getElementById('bq-5-dropdown');
+    dropdown.addEventListener('change', () => {
+        sizeGender();
+        typeGender();
+        SubGender();
+        warnaGender();
+        PieGender();
+    });
+
+    // Initial call to render the chart with default data
+    sizeGender();
+    typeGender();
+    SubGender();
+    warnaGender();
+    PieGender();
+});
+
+let sizeChart;
+let typeChart;
+let subChart;
+let warnaChart;
+let pieGenChart;

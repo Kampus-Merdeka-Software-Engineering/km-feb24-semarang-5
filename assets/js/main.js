@@ -1,44 +1,3 @@
-/*==================== MENU SHOW Y HIDDEN ====================*/
-const navMenu = document.getElementById('nav-menu'),
-navToggle = document.getElementById('nav-toggle'),
-navClose = document.getElementById('nav-close')
-
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
-if(navToggle){
-    navToggle.addEventListener('click',()=>{
-        navMenu.classList.add('show-menu')
-    })
-}
-
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
-if(navClose){
-    navClose.addEventListener('click',()=>{
-        navMenu.classList.remove('show-menu')
-    })
-}
-
-/*==================== REMOVE MENU MOBILE ====================*/
-const navLink = document.querySelectorAll('.nav__link')
-
-function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show-menu')
-}
-navLink.forEach(n => n.addEventListener('click', linkAction))
-
-
-
-// GOOGLESHEETS
-function doPost(e) {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-  var row = [e.parameter.name, e.parameter.email, e.parameter.message];
-  sheet.appendRow(row);
-  return ContentService.createTextOutput("Success").setMimeType(ContentService.MimeType.TEXT);
-}
-
 // KOTAK SARAN
 
 function submitForm() {
@@ -46,7 +5,7 @@ function submitForm() {
   alert(`Terimakasih ${nama}. Pesan Anda berhasil dikirim!`);
 }
 
-
+// collaps & expand section
 function toggleRec(element) {
   // Toggle the clicked dropdown
   const content = element.nextElementSibling;
@@ -87,10 +46,8 @@ function toggleRec(element) {
   }
 }
 
-//panggil revenue bar di BQ4.js
 
-
-// tooggle DROP Down1
+// tooggle DROP Down hardwork
 function toggleContent(element) {
   // Close any currently open dropdowns
   const openContents = document.querySelectorAll('.bq-content.show');
@@ -123,7 +80,7 @@ function toggleContent(element) {
 }
 
 
-/*==================== form dom ====================*/
+/*==================== form Local Storage ====================*/
 
 function submitForm() {
   var name = document.getElementById('name').value.trim();
@@ -190,7 +147,6 @@ window.onload = function() {
 document.querySelector('.popup button').addEventListener('click', function() {
   document.querySelector('.popup').style.display = 'none';
 });
-
 
 function saveData(name, email, message) {
   // Mengambil data lama dari local storage

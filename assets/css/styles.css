@@ -6,11 +6,6 @@
     --header-height: 40px;
 
     /*========== Colors ==========*/
-    /* Change favorite color */
-    --hue-color: 000; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
-
-    /* HSL color mode */
-    /* Hex color mode */
     --first-color: #000000;
     --first-color-second: #f6fc3f;
     --first-color-alt: #f6d51f;
@@ -43,7 +38,6 @@
     --font-semi-bold: 600;
 
     /*========== Margenes Bottom ==========*/
-    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
     --mb-0-75: .75rem;
@@ -98,7 +92,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid #ccc; */
   padding: 10px;
 }
 .canvas-container1 canvas {
@@ -179,9 +172,6 @@ footer{
 
 
 /*==================== REUSABLE CSS CLASSES ====================*/
-/* .section {
-  padding: 1rem 0 4rem; 
-} */
 
 .section__title {
   font-size: var(--h1-font-size);
@@ -238,7 +228,7 @@ margin: auto;
 
 
 .bq-content.show {
-  max-height: 3000px; /* You can adjust this value as needed */
+  max-height: 3000px; /* adjust this */
   visibility: visible;
 }
 
@@ -283,9 +273,6 @@ margin: auto;
   
 }
 
-/* .bq{
-  margin-top: 20px;
-} */
 
 .header {
   width: 100%;
@@ -372,25 +359,14 @@ canvas {
   background-image: url('/assets/img/blob.png');
   background-repeat: no-repeat;
   background-size: 95%; 
-  /* background-attachment: fixed; */
   transform-origin: center;
   background-position: right;
   color: black;
   text-align: center;
 }
 .team-profile {
-  /* margin: 8% 5%; */
-  /* background-color: #bb86ed; */
-  /* background-image: url('/assets/img/blob.png'); */
-  /* background-repeat: no-repeat;
-  background-size: cover; 
-  transform-origin: center; */
-  /* transform: rotate(10deg); 
-  transform-origin: center;
-  z-index: -1; */
   border-radius: 50px;
   color: black;
-  /* box-shadow: inset 0 2px 15px rgba(0, 0, 0, 0.6); */
 }
 
 .team-profile__container {
@@ -483,7 +459,6 @@ canvas {
 
 /*==================== MENTOR ====================*/
 .mentor-profile {
-  /* background-image: url('/assets/img/Flag.png'); */
   margin: 8% 5% 8% 5%;  
   color: black;
 }
@@ -506,10 +481,8 @@ canvas {
   padding-bottom: 35px;
   background-repeat: no-repeat;
   background-size: contain; 
-  /* background-attachment: fixed; */
   transform-origin: center;
   background-position: center;
-  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6); */
   transition: transform 0.5s ease;
   border-radius: 50px;
 }
@@ -566,18 +539,23 @@ canvas {
   margin-bottom: 10vh;
   
 }
+.Recommendation{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 
 
 .reco-man{
-  text-align: left; 
+  text-align: justify; 
   font-size:13px;
-  color: #000000; 
+  width: 55%;
+  color: #000000;   
 }
 
 .reco-man-img{
   background-image: url('/assets/img/man-hand.png');
   height: 100%;
-  width: 200px;
+  width: 35%;
   text-align: center;
   background-repeat: no-repeat;
   background-size: contain; 
@@ -816,8 +794,8 @@ textarea{
   font-size: 20px;
   color: var(--title-color);
   font-weight: var(--font-medium);
-  position: relative; /* Needed to position the ::after pseudo-element */
-  text-decoration: none; /* Remove the default underline */
+  position: relative; 
+  text-decoration: none; 
 }
 
 .nav__link::after {
@@ -971,7 +949,7 @@ textarea{
   body {
     margin: 0;
     height: 100%;
-    overflow: hidden; /* Prevent scrolling */
+    overflow: hidden;
     display: none;
   }
 }
@@ -983,7 +961,7 @@ textarea{
   }
   .nav__list{
     column-gap: 0;
-    zoom:0.8;
+    zoom:0.7;
   }
 
   html{
@@ -1000,19 +978,10 @@ textarea{
     margin: 0;
     width: 100%;
   }
-  .nav__btns,
-  .nav__close{
-    display: none;
-  }
+  
   .dashboardfm {
-    zoom: 0;   
     height: 100vh;
   }
-
-  /* body{
-    zoom: 0.2;
-
-  } */
   main {
     margin-top: 10%;
   }
@@ -1027,12 +996,9 @@ textarea{
     }
     .dashboardfm{
       height: 320vh;
-      /* zoom: 1; */
     }
-  
     .bikeSales{
       display: block;
-      zoom:0;
     }
   
     .nav__list{
@@ -1043,7 +1009,7 @@ textarea{
       grid-template-columns: .25fr 3fr;
     }
     body{
-      zoom :0.3;
+      zoom :0.6;
       max-height:580px;
       margin-left: auto;
       margin-right: auto;
@@ -1064,9 +1030,6 @@ textarea{
     .nav__close{
       display: none;
     }
-    /* .table-team{
-      background-image: none;
-    } */
 }
 
 
@@ -1077,9 +1040,7 @@ textarea{
   }
   .dashboardfm
   {
-    zoom:1;
     height: 145vh;
-    /* margin-bottom: 20px; */
   }
 
   .nav__list{
@@ -1090,7 +1051,7 @@ textarea{
     grid-template-columns: .25fr 3fr;
   }
   body{
-    zoom :0.5;
+    zoom :0.6;
     max-height:580px;
     margin-left: auto;
     margin-right: auto;
@@ -1108,10 +1069,7 @@ textarea{
     margin-top: 6%;
     padding:0;
   }
-  .nav__btns,
-  .nav__close{
-    display: none;
-  }
+  
   
 }
 
@@ -1122,10 +1080,8 @@ textarea{
   }
   .dashboardfm
   {
-    zoom:0;
     height: 200vh;
     margin-bottom: 5%;
-    
   }
   .nav__list{
     column-gap: 0;
@@ -1133,7 +1089,7 @@ textarea{
   }
 
   body{
-    zoom :0.9;
+    zoom :1;
     max-height:580px;
     margin-left: auto;
     margin-right: auto;
@@ -1151,10 +1107,7 @@ textarea{
     margin-top: 5%;
     padding:0;
   }
-  .nav__btns,
-  .nav__close{
-    display: none;
-  }
+  
   
 }
 
@@ -1167,11 +1120,7 @@ textarea{
     padding:0;
   }
   body{
-    zoom:1.2;
-  }
-  .dashboardfm{
-    zoom:0.5;
-    height: 500vh;
+    zoom:1.3;
   }
   .nav__list{
     column-gap: 0;
@@ -1188,10 +1137,9 @@ textarea{
     padding:0;
   }
   body{
-    zoom:1.6;
+    zoom:1.45;
   }
   .dashboardfm{
-    zoom:0.5;
     height: 250vh;
   }
   .nav__list{
@@ -1209,12 +1157,9 @@ textarea{
     padding:0;
   }
   body{
-    zoom:1.7;
+    zoom:1.65;
   }
-  .dashboardfm{
-    zoom:0.5;
-    height: 250vh;
-  }
+
 }
 
 
@@ -1227,14 +1172,9 @@ textarea{
     padding:0;
   }
   body{
-    zoom:1.7;
-  }
-  .dashboardfm{
-    zoom:0.5;
-    height: 250vh;
+    zoom:2;
   }
 }
-
 
 
 
