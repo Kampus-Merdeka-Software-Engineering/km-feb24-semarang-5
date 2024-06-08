@@ -720,9 +720,6 @@ const usiaRevenue = async () => {
             options: {
                 plugins: {
                     tooltip: {
-                        enabled: true,
-                        mode: 'index',
-                        intersect: false,
                         callbacks: {
                             label: function(context) {
                                 return `${context.label}: $${numberWithThousandSeparators(context.raw)}`;
